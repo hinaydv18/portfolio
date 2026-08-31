@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)file:///C:/Users/AMAN/Desktop/projet%20-11/Hina%20Yadav%20%E2%80%94%20Portfolio%20Data%20&%20BI%20Analyst.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hina Yadav — Portfolio Data &amp; BI Analyst</title>
+<meta name="description" content="Portfolio de Hina Yadav, Business Intelligence &amp; Data Analyst en reconversion — dossiers clients, méthode de veille, compétences.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Hina Yadav — Portfolio Data &amp; BI Analyst_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --ink:#11141f;
+    --ink-2:#1c2133;
+    --paper:#eef0ea;
+    --paper-2:#e4e7de;
+    --card:#fbfbf8;
+    --text:#1b1f2a;
+    --muted:#5c6270;
+    --muted-2:#8a8f9c;
+    --line: rgba(17,20,31,0.12);
+    --line-paper: rgba(17,20,31,0.10);
+    --gold:#c1893f;
+    --gold-dark:#96652b;
+    --teal:#2e6f63;
+    --slate:#48568c;
+    --plum:#7a4a92;
+    --radius: 3px;
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  ::selection{ background: var(--gold); color:#fff; }
+
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  a{ color:inherit; }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(238,240,234,0.88);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid var(--line-paper);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-mark{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.05rem;
+    display:flex; align-items:baseline; gap:8px;
+  }
+  .nav-mark .dot{ color:var(--gold); }
+  .nav-links{ display:flex; gap:28px; font-size:0.86rem; }
+  .nav-links a{
+    text-decoration:none; color:var(--muted);
+    font-family:'IBM Plex Mono', monospace; letter-spacing:0.02em;
+    padding-bottom:2px; border-bottom:1px solid transparent;
+    transition: color .2s, border-color .2s;
+  }
+  .nav-links a:hover{ color:var(--ink); border-color:var(--gold); }
+  @media (max-width:720px){ .nav-links{ display:none; } }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:96px 0 56px;
+    position:relative;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--gold-dark);
+    display:flex; align-items:center; gap:10px;
+    margin-bottom:22px;
+  }
+  .eyebrow::before{
+    content:""; width:26px; height:1px; background:var(--gold-dark);
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 6vw, 4.4rem);
+    line-height:0.98;
+    max-width:11ch;
+  }
+  .hero .role{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:400;
+    font-size:clamp(1.1rem,2vw,1.5rem);
+    color:var(--muted); margin-top:14px; max-width:44ch;
+  }
+  .hero .lede{
+    margin-top:26px; font-size:1.05rem; color:var(--text); max-width:58ch;
+  }
+  .hero .lede strong{ color:var(--ink); font-weight:600; }
+
+  .cta-row{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 22px; border-radius:var(--radius);
+    font-family:'IBM Plex Mono', monospace; font-size:0.82rem; letter-spacing:0.03em;
+    text-decoration:none; border:1px solid var(--ink); transition: all .2s;
+  }
+  .btn-primary{ background:var(--ink); color:var(--paper); }
+  .btn-primary:hover{ background:var(--gold-dark); border-color:var(--gold-dark); }
+  .btn-ghost{ background:transparent; color:var(--ink); }
+  .btn-ghost:hover{ background:var(--ink); color:var(--paper); }
+
+  /* ---------- LEDGER STAT STRIP (signature) ---------- */
+  .ledger{
+    margin-top:64px;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    display:grid; grid-template-columns:repeat(4,1fr);
+  }
+  .ledger-cell{
+    padding:20px 24px;
+    border-left:1px solid var(--line);
+  }
+  .ledger-cell:first-child{ border-left:none; padding-left:0; }
+  .ledger-num{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.9rem; color:var(--ink);
+  }
+  .ledger-label{
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--muted);
+    text-transform:uppercase; letter-spacing:0.06em; margin-top:4px;
+  }
+  @media (max-width:820px){
+    .ledger{ grid-template-columns:repeat(2,1fr); }
+    .ledger-cell:nth-child(3){ border-left:none; padding-left:0; }
+  }
+  @media (max-width:480px){
+    .ledger{ grid-template-columns:1fr; }
+    .ledger-cell{ border-left:none !important; border-top:1px solid var(--line); padding-left:0 !important; }
+    .ledger-cell:first-child{ border-top:none; }
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{ padding:88px 0; }
+  .section-head{ margin-bottom:48px; max-width:64ch; }
+  .section-head h2{ font-size:clamp(1.8rem,3.4vw,2.5rem); margin-top:10px; }
+  .section-head .lede{ margin-top:16px; color:var(--muted); font-size:1.02rem; }
+
+  #methode{ background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+
+  /* ---------- METHODE ---------- */
+  .method-steps{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:0;
+    margin-top:52px; border-top:1px solid var(--line);
+  }
+  .method-step{ padding:26px 20px 0; border-left:1px solid var(--line); position:relative; }
+  .method-step:first-child{ border-left:none; }
+  .method-step .n{ font-family:'IBM Plex Mono',monospace; color:var(--gold-dark); font-size:0.78rem; }
+  .method-step h4{ font-size:1.02rem; margin-top:10px; }
+  .method-step p{ font-size:0.88rem; color:var(--muted); margin-top:8px; }
+  @media (max-width:900px){
+    .method-steps{ grid-template-columns:repeat(2,1fr); }
+    .method-step{ border-top:1px solid var(--line); }
+    .method-step:nth-child(odd){ border-left:none; }
+  }
+  @media (max-width:520px){
+    .method-steps{ grid-template-columns:1fr; }
+    .method-step{ border-left:none !important; }
+  }
+
+  .proof{
+    margin-top:64px; background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius); padding:36px;
+  }
+  .proof-tag{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em;
+    text-transform:uppercase; color:var(--muted); margin-bottom:6px;
+  }
+  .proof h3{ font-size:1.35rem; }
+  .proof-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:28px;
+  }
+  @media (max-width:760px){ .proof-grid{ grid-template-columns:1fr; } }
+  .compare{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+  .compare-head{
+    display:flex; justify-content:space-between; padding:12px 16px;
+    background:var(--paper-2); font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+  }
+  .compare-row{
+    display:flex; justify-content:space-between; padding:11px 16px;
+    border-top:1px solid var(--line); font-size:0.88rem;
+  }
+  .compare-row span:last-child{ font-family:'IBM Plex Mono',monospace; color:var(--ink); font-weight:500; }
+  .compare-row.win{ background: rgba(46,111,99,0.07); }
+  .decision{
+    margin-top:22px; padding-top:20px; border-top:1px dashed var(--line);
+    font-size:0.92rem; color:var(--text);
+  }
+  .decision strong{ color:var(--teal); }
+
+  /* ---------- DOSSIERS ---------- */
+  #dossiers{ }
+  .dossier{
+    border-top:1px solid var(--line);
+    padding:52px 0;
+    display:grid; grid-template-columns:220px 1fr; gap:44px;
+  }
+  .dossier:last-child{ border-bottom:1px solid var(--line); }
+  @media (max-width:820px){ .dossier{ grid-template-columns:1fr; gap:20px; } }
+
+  .dossier-meta{ position:sticky; top:90px; align-self:start; }
+  .dossier-num{
+    font-family:'Fraunces', serif; font-weight:700; font-size:2.6rem;
+    color:var(--ink); line-height:1;
+  }
+  .dossier-num .p{ font-family:'IBM Plex Mono',monospace; font-size:1rem; font-weight:500; color:var(--muted-2); }
+  .sector-tag{
+    display:inline-block; margin-top:14px; padding:5px 12px;
+    border-radius:20px; font-family:'IBM Plex Mono',monospace;
+    font-size:0.7rem; letter-spacing:0.05em; text-transform:uppercase;
+    color:#fff;
+  }
+  .tag-vin{ background:var(--gold-dark); }
+  .tag-sante{ background:var(--teal); }
+  .tag-immo{ background:var(--slate); }
+  .tag-gaming{ background:var(--plum); }
+
+  .stack-list{ margin-top:20px; display:flex; flex-wrap:wrap; gap:6px; }
+  .stack-pill{
+    font-family:'IBM Plex Mono',monospace; font-size:0.68rem;
+    border:1px solid var(--line); padding:4px 9px; border-radius:20px; color:var(--muted);
+  }
+
+  .dossier-body h3{ font-size:1.55rem; max-width:34ch; }
+  .dossier-sub{
+    font-family:'Fraunces',serif; font-style:italic; color:var(--muted);
+    font-size:1.02rem; margin-top:8px; max-width:56ch;
+  }
+
+  .dblock{ margin-top:28px; }
+  .dblock-label{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--gold-dark); margin-bottom:8px;
+  }
+  .dblock p, .dblock li{ font-size:0.95rem; color:var(--text); }
+  .dblock ul{ margin:0; padding-left:18px; }
+  .dblock li{ margin-bottom:6px; }
+  .result-callout{
+    margin-top:10px; padding:14px 18px; background:var(--card);
+    border-left:3px solid var(--teal); border-radius:0 var(--radius) var(--radius) 0;
+    font-size:0.92rem;
+  }
+  .result-callout strong{ color:var(--ink); }
+  .limits{ color:var(--muted); font-size:0.9rem; font-style:italic; margin-top:10px; }
+
+  /* ---------- SKILLS ---------- */
+  #competences{ background:var(--ink); color:var(--paper); }
+  #competences h2{ color:var(--paper); }
+  #competences .section-head .lede{ color:rgba(238,240,234,0.65); }
+  .skills-grid{
+    margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:rgba(238,240,234,0.14);
+  }
+  @media (max-width:760px){ .skills-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:480px){ .skills-grid{ grid-template-columns:1fr; } }
+  .skill-card{ background:var(--ink); padding:26px 24px; }
+  .skill-card h4{ color:var(--paper); font-size:1.02rem; }
+  .skill-card .tools{
+    margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+    color:var(--gold); line-height:1.9;
+  }
+
+  /* ---------- FOOTER / CONTACT ---------- */
+  #contact{ text-align:left; }
+  #contact h2{ font-size:clamp(2rem,4vw,2.9rem); max-width:16ch; }
+  #contact .lede{ max-width:56ch; margin-top:18px; color:var(--muted); font-size:1.02rem; }
+  .contact-row{
+    margin-top:40px; display:flex; gap:40px; flex-wrap:wrap;
+    font-family:'IBM Plex Mono',monospace; font-size:0.86rem;
+  }
+  .contact-row .k{ color:var(--muted-2); display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px; }
+  footer{
+    border-top:1px solid var(--line); padding:26px 0; margin-top:20px;
+    font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:var(--muted-2);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+  }
+
+  :focus-visible{ outline:2px solid var(--gold-dark); outline-offset:2px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-mark">Hina Yadav<span class="dot">.</span></div>
+    <div class="nav-links">
+      <a href="file:///C:/Users/AMAN/Downloads/index.html#methode">Méthode</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index.html#dossiers">Dossiers</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index.html#competences">Compétences</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio — Business Intelligence &amp; Data Analyst</div>
+    <h1 class="reveal in">Des données<br>éparses aux<br>décisions.</h1>
+    <p class="role">Analyste BI en reconversion, ex-Sales Coordinator EMEA</p>
+    <p class="lede">Je structure et j'analyse des données commerciales pour des secteurs très différents — <strong>vin &amp; spiritueux, santé, immobilier, jeu vidéo</strong> — avec la même exigence : comparer les options avant de choisir, tester sur des données réelles, documenter la décision.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="file:///C:/Users/AMAN/Downloads/index.html#dossiers">Voir les dossiers clients →</a>
+      <a class="btn btn-ghost" href="file:///C:/Users/AMAN/Downloads/index.html#methode">Ma méthode de veille</a>
+    </div>
+
+    <div class="ledger">
+      <div class="ledger-cell">
+        <div class="ledger-num mono">05</div>
+        <div class="ledger-label">Dossiers clients</div>
+      </div>
+      <div class="ledger-cell">
+        <div class="ledger-num mono">04</div>
+        <div class="ledger-label">Secteurs couverts</div>
+      </div>
+      <div class="ledger-cell">
+        <div class="ledger-num mono">FR·EN·HI</div>
+        <div class="ledger-label">Langues de travail</div>
+      </div>
+      <div class="ledger-cell">
+        <div class="ledger-num mono">100%</div>
+        <div class="ledger-label">Résultats vérifiés sur données réelles</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- METHODE / VEILLE -->
+<section id="methode">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Comment je travaille</div>
+      <h2>Une veille documentée,<br>pas une intuition.</h2>
+      <p class="lede">Avant d'appliquer une méthode, je vérifie qu'elle est la bonne pour les données que j'ai sous la main. Ce principe traverse tous mes dossiers, et prend une forme systématique dès qu'un choix technique doit être justifié devant un client ou une équipe.</p>
+    </div>
+
+    <div class="method-steps">
+      <div class="method-step">
+        <div class="n mono">01</div>
+        <h4>Besoin</h4>
+        <p>Identifier une limite concrète dans l'analyse ou le livrable existant.</p>
+      </div>
+      <div class="method-step">
+        <div class="n mono">02</div>
+        <h4>Panel</h4>
+        <p>Comparer au moins deux méthodes ou outils, avec leurs sources.</p>
+      </div>
+      <div class="method-step">
+        <div class="n mono">03</div>
+        <h4>Critères</h4>
+        <p>Qualité, robustesse, temps, reproductibilité, conformité.</p>
+      </div>
+      <div class="method-step">
+        <div class="n mono">04</div>
+        <h4>Test réel</h4>
+        <p>Exécution sur le jeu de données du client, pas un exemple jouet.</p>
+      </div>
+      <div class="method-step">
+        <div class="n mono">05</div>
+        <h4>Décision</h4>
+        <p>Un choix justifié par des résultats chiffrés, pas par défaut.</p>
+      </div>
+    </div>
+
+    <div class="proof">
+      <div class="proof-tag">Preuve à l'appui — dossier BottleNeck (P06)</div>
+      <h3>Deux arbitrages menés sur un même catalogue de 714 produits</h3>
+
+      <div class="proof-grid">
+        <div class="compare">
+          <div class="compare-head"><span>Corrélation</span><span>Pearson vs Spearman</span></div>
+          <div class="compare-row"><span>Normalité des variables (Shapiro-Wilk)</span><span>rejetée, p&lt;0,001</span></div>
+          <div class="compare-row"><span>stock / ventes — Pearson</span><span>r = 0,439</span></div>
+          <div class="compare-row win"><span>stock / ventes — Spearman</span><span>ρ = 0,759</span></div>
+          <div class="compare-row"><span>Écart maximal mesuré</span><span>0,465</span></div>
+        </div>
+        <div class="compare">
+          <div class="compare-head"><span>Segmentation</span><span>K-Means vs DBSCAN</span></div>
+          <div class="compare-row"><span>K-Means (k=3) — silhouette</span><span>0,382</span></div>
+          <div class="compare-row"><span>DBSCAN — silhouette</span><span>0,590</span></div>
+          <div class="compare-row win"><span>Segments actionnables retenus</span><span>3 (404 / 281 / 28)</span></div>
+          <div class="compare-row"><span>Produits classés hors-segment (DBSCAN)</span><span>1,3 %</span></div>
+        </div>
+      </div>
+
+      <div class="decision">
+        <strong>Décision :</strong> Spearman a été retenu pour la corrélation — aucune variable n'étant normalement distribuée, Pearson sous-estimait la relation stock/ventes. Pour la segmentation, K-Means a été préféré malgré un score plus faible : ses trois groupes équilibrés sont directement exploitables par une équipe achats, quand DBSCAN se contente d'isoler les cas extrêmes. Chaque test a été exécuté sur les données réelles, avec traçabilité complète (jeu de données versionné, empreinte SHA-256, notebook annoté cellule par cellule).
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOSSIERS -->
+<section id="dossiers">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Preuves de savoir-faire</div>
+      <h2>Dossiers clients</h2>
+      <p class="lede">Cinq missions, quatre secteurs. Chaque dossier suit la même grille de lecture : contexte, données, démarche, résultats, limites — pour que vous puissiez évaluer mon niveau sans avoir à deviner.</p>
+    </div>
+
+    <!-- P06 — BottleNeck -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P06</div>
+        <span class="sector-tag tag-vin">Vin &amp; spiritueux</span>
+        <div class="stack-list">
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">pandas</span>
+          <span class="stack-pill">scikit-learn</span>
+          <span class="stack-pill">scipy</span>
+          <span class="stack-pill">Jupyter</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3>BottleNeck — nettoyer et fiabiliser un catalogue de 714 produits</h3>
+        <p class="dossier-sub">Optimiser la gestion et nettoyer les données de stock d'une boutique en ligne de vins et spiritueux.</p>
+
+        <div class="dblock">
+          <div class="dblock-label">Contexte / besoin métier</div>
+          <p>BottleNeck consolide trois exports (ERP, site web, table de correspondance) pour piloter son catalogue, mais les données brutes contiennent des incohérences (prix et stocks négatifs, doublons) qui faussent le pilotage commercial.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Données</div>
+          <ul>
+            <li>3 exports sources : ERP (825 lignes), site web (1513 lignes), table de liaison (825 lignes)</li>
+            <li>Jeu consolidé final : 714 produits × 26 colonnes, sur 6 familles (vin à 92 % du catalogue)</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Démarche</div>
+          <ul>
+            <li>Fusion des sources, correction des valeurs négatives, détection d'outliers (Z-score)</li>
+            <li>Audit qualité formalisé (% de manquants, doublons, distributions)</li>
+            <li>Veille comparative documentée sur deux axes : méthode de corrélation, puis algorithme de segmentation</li>
+            <li>Versionnement du jeu de données (raw → cleaned_v1) avec empreinte SHA-256 pour la traçabilité</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Résultats &amp; impact</div>
+          <div class="result-callout">La lecture par corrélation de rangs (Spearman) a <strong>révisé une conclusion erronée</strong> : stock et ventes sont en réalité fortement corrélés (0,759 contre 0,439 estimés par Pearson). La segmentation retenue isole <strong>28 produits « dormants haut de gamme »</strong> à surveiller en priorité pour éviter l'immobilisation financière.</div>
+        </div>
+        <p class="limits">Limites : photographie à un instant T, sans dimension temporelle — une prochaine itération gagnerait à intégrer plusieurs périodes pour suivre l'évolution des segments.</p>
+      </div>
+    </article>
+
+    <!-- P07 — Sanitoral -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P07</div>
+        <span class="sector-tag tag-sante">Santé</span>
+        <div class="stack-list">
+          <span class="stack-pill">Power BI</span>
+          <span class="stack-pill">DAX</span>
+          <span class="stack-pill">RLS</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3>Sanitoral — un tableau de bord pour reprendre la main sur les délais projet</h3>
+        <p class="dossier-sub">Créer un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets dans une entreprise de santé.</p>
+
+        <div class="dblock">
+          <div class="dblock-label">Contexte / besoin métier</div>
+          <p>Une entreprise du secteur santé avait besoin d'un outil de suivi centralisé pour visualiser l'avancement de ses projets et repérer les retards avant qu'ils ne deviennent critiques.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Données</div>
+          <ul>
+            <li>Données de suivi de projet (statuts, échéances, avancement) à intégrer dans un modèle Power BI</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Démarche</div>
+          <ul>
+            <li>Construction du modèle de données et des visuels de suivi</li>
+            <li>Mise en place de la sécurité au niveau ligne (Row Level Security) pour restreindre l'accès aux données selon le profil utilisateur — diagnostic et résolution des blocages d'accès rencontrés en configuration</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Résultats &amp; impact</div>
+          <div class="result-callout">Un tableau de bord opérationnel où chaque utilisateur ne voit que les données qui le concernent, sans compromis sur la sécurité des accès.</div>
+        </div>
+        <p class="limits">Limites : dossier à enrichir de métriques précises sur les gains de délai constatés — une v2 est prévue pour formaliser des KPI de suivi comparables aux autres dossiers.</p>
+      </div>
+    </article>
+
+    <!-- P08 — Immobilier -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P08</div>
+        <span class="sector-tag tag-immo">Immobilier</span>
+        <div class="stack-list">
+          <span class="stack-pill">Python</span>
+          <span class="stack-pill">pandas</span>
+          <span class="stack-pill">scikit-learn</span>
+          <span class="stack-pill">matplotlib</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3>Marché immobilier parisien — valoriser un portefeuille et détecter des opportunités</h3>
+        <p class="dossier-sub">Analyser l'évolution des prix de l'immobilier avec Python pour accompagner un changement de stratégie client.</p>
+
+        <div class="dblock">
+          <div class="dblock-label">Contexte / besoin métier</div>
+          <p>Un client souhaitait comprendre la dynamique des prix immobiliers à Paris pour réorienter sa stratégie d'investissement et identifier de futures opportunités.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Données</div>
+          <ul>
+            <li>Annonces immobilières couvrant les 20 arrondissements parisiens (prix, code postal, type de bien)</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Démarche</div>
+          <ul>
+            <li>Analyse exploratoire par arrondissement, encodage des variables catégorielles (code postal, type de bien)</li>
+            <li>Modèle de régression linéaire pour la valorisation, appliqué à un portefeuille de biens à évaluer</li>
+            <li>Segmentation par K-Means (2 clusters) pour distinguer logements et locaux commerciaux selon le prix au m²</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Résultats &amp; impact</div>
+          <div class="result-callout">Modèle de valorisation avec un <strong>R² ≈ 0,98</strong> sur le jeu de test, et une séparation nette entre biens résidentiels et commerciaux, exploitable pour prioriser les biens du portefeuille client.</div>
+        </div>
+        <p class="limits">Limites : un R² aussi élevé appelle une vérification de fuite de données avant mise en production ; le modèle reste à valider sur un jeu totalement externe.</p>
+      </div>
+    </article>
+
+    <!-- P09 — Boissons Power BI -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P09</div>
+        <span class="sector-tag tag-vin">Vin &amp; spiritueux</span>
+        <div class="stack-list">
+          <span class="stack-pill">Power BI</span>
+          <span class="stack-pill">DAX</span>
+          <span class="stack-pill">Modélisation</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3>Boutique de vin — piloter marge, stock et promotions au même endroit</h3>
+        <p class="dossier-sub">Créer un tableau de bord dynamique avec Power BI et optimiser la performance commerciale d'une boutique de vin.</p>
+
+        <div class="dblock">
+          <div class="dblock-label">Contexte / besoin métier</div>
+          <p>Une boutique de vins et spiritueux avait besoin d'un outil unique pour suivre marges, rotation de stock et efficacité des promotions, jusque-là dispersés dans plusieurs fichiers.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Données</div>
+          <ul>
+            <li>Modèle relationnel à 5 tables autour d'un hub Finance (Ventes, Promotions, Web, Calendrier)</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Démarche</div>
+          <ul>
+            <li>Mesures DAX pour la marge, la rotation de stock, le ROI promotionnel et les comparaisons mois par mois</li>
+            <li>Indicateurs visuels de statut de marge, thème graphique dédié</li>
+            <li>4 pages d'analyse (Vue d'ensemble, Ventes &amp; Produits, Stock &amp; Marge, Performance Promo) + une page de recommandations</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Résultats &amp; impact</div>
+          <div class="result-callout">Un dashboard multi-pages livré avec un rapport Word formel, donnant à l'équipe une vue mensuelle consolidée de la performance commerciale et une page dédiée aux recommandations d'action.</div>
+        </div>
+        <p class="limits">Limites : les seuils de marge sont actuellement fixes — un prochain incrément pourrait les recalibrer automatiquement par famille de produits.</p>
+      </div>
+    </article>
+
+    <!-- P10 — UOI Games -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P10</div>
+        <span class="sector-tag tag-gaming">Jeu vidéo</span>
+        <div class="stack-list">
+          <span class="stack-pill">Excel</span>
+          <span class="stack-pill">PESTEL/SWOT</span>
+          <span class="stack-pill">Enquête</span>
+          <span class="stack-pill">Pearson</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3>UOI Games — identifier les segments de marché avant un premier AAA</h3>
+        <p class="dossier-sub">Analyser une demande business et identifier les segments du marché les plus pertinents pour un studio qui prépare son premier jeu AAA.</p>
+
+        <div class="dblock">
+          <div class="dblock-label">Contexte / besoin métier</div>
+          <p>UOI Games envisageait son premier jeu AAA (RPG/FPS) et avait besoin d'objectiver l'opportunité : quel genre, quelle plateforme, quel positionnement, avant d'engager le budget.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Données</div>
+          <ul>
+            <li>3 jeux de données croisés : ventes de jeux vidéo, ventes de consoles, données éditeurs</li>
+            <li>Enquête originale (10+ questions, ~3 min, anonyme) menée pour la segmentation du marché</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Démarche</div>
+          <ul>
+            <li>Analyse PESTEL/SWOT du marché avant l'analyse chiffrée</li>
+            <li>Benchmark des meilleurs titres RPG/FPS, tests de corrélation (Pearson) sur les ventes</li>
+            <li>Recommandation de plateformes de lancement, restitution en classeur Excel à formules dynamiques, deck de 19 slides et rapport Word</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label">Résultats &amp; impact</div>
+          <div class="result-callout">Recommandation de prioriser <strong>PS5, Xbox et PC avant la Switch</strong> pour un premier AAA RPG/FPS, appuyée par le benchmark et les résultats de l'enquête de segmentation.</div>
+        </div>
+        <p class="limits">Limites : l'enquête repose sur du déclaratif et un échantillon non garanti représentatif ; les tests de corrélation gagneraient aujourd'hui à être doublés d'une lecture Spearman, comme pratiqué depuis sur le dossier BottleNeck.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section id="competences">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Boîte à outils</div>
+      <h2>Compétences &amp; outils</h2>
+      <p class="lede">Les mêmes outils reviennent d'un secteur à l'autre — c'est la rigueur de la démarche qui s'adapte au contexte, pas l'inverse.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4>Analyse &amp; data science</h4>
+        <div class="tools">Python · pandas · scikit-learn<br>scipy · statistiques (Pearson,<br>Spearman, Shapiro-Wilk)</div>
+      </div>
+      <div class="skill-card">
+        <h4>Bases de données</h4>
+        <div class="tools">SQL · modélisation relationnelle<br>schémas &amp; dictionnaires de données</div>
+      </div>
+      <div class="skill-card">
+        <h4>Business Intelligence</h4>
+        <div class="tools">Power BI · DAX · Power Query<br>Row Level Security · Excel avancé</div>
+      </div>
+      <div class="skill-card">
+        <h4>Machine Learning</h4>
+        <div class="tools">Régression linéaire · K-Means<br>DBSCAN · évaluation de modèles</div>
+      </div>
+      <div class="skill-card">
+        <h4>Méthode &amp; conformité</h4>
+        <div class="tools">Veille technologique documentée<br>cahiers des charges · RGPD</div>
+      </div>
+      <div class="skill-card">
+        <h4>Communication</h4>
+        <div class="tools">Rapports &amp; slides de soutenance<br>Français · Anglais · Hindi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Prochaine étape</div>
+    <h2>Discutons de votre prochain jeu de données.</h2>
+    <p class="lede">En reconversion vers un poste d'analyste Data / BI, je cherche une équipe où cette exigence de méthode — comparer, tester, documenter — a sa place dès le premier projet.</p>
+
+    <div class="contact-row">
+      <div><span class="k">Nom</span>Hina Yadav</div>
+      <div><span class="k">Langues</span>Français · Anglais · Hindi</div>
+      <div><span class="k">Basée à</span>France</div>
+      <div><span class="k">Formation</span>Business Intelligence Analyst — OpenClassrooms</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <footer>
+      <span>© 2026 Hina Yadav</span>
+      <span>Portfolio conçu avec une veille IA documentée — cf. dossier P06</span>
+    </footer>
+  </div>
+</section>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.12 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+
+
+</body></html>
