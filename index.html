@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!-- saved from url=(0050)file:///C:/Users/AMAN/Downloads/index.html#methode -->
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0044)file:///C:/Users/AMAN/Downloads/index_2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hina Yadav — Portfolio Data &amp; BI Analyst</title>
-<meta name="description" content="Portfolio de Hina Yadav, Business Intelligence &amp; Data Analyst en reconversion — dossiers clients, méthode de veille, compétences.">
+<title>Hina Yadav — Data &amp; BI Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Hina Yadav, Business Intelligence &amp; Data Analyst on a career change — projects, research method, skills.">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./Hina Yadav — Portfolio Data &amp; BI Analyst_files/css2" rel="stylesheet">
+<link href="file:///C:/Users/AMAN/Downloads/Hina%20Yadav%20%E2%80%94%20Portfolio%20Data%20&amp;%20BI%20Analyst_files/css2" rel="stylesheet">
 <style>
   :root{
     --ink:#11141f;
@@ -25,6 +25,7 @@
     --teal:#2e6f63;
     --slate:#48568c;
     --plum:#7a4a92;
+    --rose:#a8496a;
     --radius: 3px;
     --maxw: 1120px;
   }
@@ -78,6 +79,20 @@
     transition: color .2s, border-color .2s;
   }
   .nav-links a:hover{ color:var(--ink); border-color:var(--gold); }
+
+  .dossier-link{ margin-top:10px; font-family:'IBM Plex Mono', monospace; font-size:0.82rem; }
+  .dossier-link a{ color:var(--gold-dark); text-decoration:none; border-bottom:1px solid var(--gold-dark); }
+  .dossier-link a:hover{ color:var(--ink); border-color:var(--ink); }
+  .nav-right{ display:flex; align-items:center; gap:28px; }
+  .lang-switch{ display:flex; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+  .lang-btn{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.04em;
+    background:transparent; color:var(--muted); border:0; padding:6px 12px; cursor:pointer;
+    transition: background .2s, color .2s;
+  }
+  .lang-btn + .lang-btn{ border-left:1px solid var(--line); }
+  .lang-btn:hover{ color:var(--ink); }
+  .lang-btn.active{ background:var(--ink); color:var(--paper); }
   @media (max-width:720px){ .nav-links{ display:none; } }
 
   /* ---------- HERO ---------- */
@@ -232,9 +247,10 @@
     color:#fff;
   }
   .tag-vin{ background:var(--gold-dark); }
-  .tag-sante{ background:var(--teal); }
+  .tag-pmo{ background:var(--teal); }
   .tag-immo{ background:var(--slate); }
   .tag-gaming{ background:var(--plum); }
+  .tag-beaute{ background:var(--rose); }
 
   .stack-list{ margin-top:20px; display:flex; flex-wrap:wrap; gap:6px; }
   .stack-pill{
@@ -312,11 +328,17 @@
 <nav class="nav">
   <div class="nav-inner">
     <div class="nav-mark">Hina Yadav<span class="dot">.</span></div>
+    <div class="nav-right">
     <div class="nav-links">
-      <a href="file:///C:/Users/AMAN/Downloads/index.html#methode">Méthode</a>
-      <a href="file:///C:/Users/AMAN/Downloads/index.html#dossiers">Dossiers</a>
-      <a href="file:///C:/Users/AMAN/Downloads/index.html#competences">Compétences</a>
-      <a href="file:///C:/Users/AMAN/Downloads/index.html#contact">Contact</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index_2.html#methode" data-en="Method" data-fr="Méthode">Method</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index_2.html#dossiers" data-en="Projects" data-fr="Projets">Projects</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index_2.html#competences" data-en="Skills" data-fr="Compétences">Skills</a>
+      <a href="file:///C:/Users/AMAN/Downloads/index_2.html#contact">Contact</a>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language / Langue">
+      <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+    </div>
     </div>
   </div>
 </nav>
@@ -324,30 +346,30 @@
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Portfolio — Business Intelligence &amp; Data Analyst</div>
-    <h1 class="reveal in">Des données<br>éparses aux<br>décisions.</h1>
-    <p class="role">Analyste BI en reconversion, ex-Sales Coordinator EMEA</p>
-    <p class="lede">Je structure et j'analyse des données commerciales pour des secteurs très différents — <strong>vin &amp; spiritueux, santé, immobilier, jeu vidéo</strong> — avec la même exigence : comparer les options avant de choisir, tester sur des données réelles, documenter la décision.</p>
+    <h1 class="reveal in" data-en="From scattered&lt;br&gt;data to&lt;br&gt;decisions." data-fr="Des données&lt;br&gt;éparses aux&lt;br&gt;décisions.">From scattered<br>data to<br>decisions.</h1>
+    <p class="role" data-en="BI analyst on a career change, former Sales Coordinator EMEA" data-fr="Analyste BI en reconversion, ex-Sales Coordinator EMEA">BI analyst on a career change, former Sales Coordinator EMEA</p>
+    <p class="lede" data-en="I structure and analyse commercial data across very different sectors — &lt;strong&gt;wine &amp; spirits, consulting &amp; PMO, real estate, video games, beauty &amp; cosmetics&lt;/strong&gt; — with the same standard: compare options before choosing, test on real data, document the decision." data-fr="Je structure et j'analyse des données commerciales pour des secteurs très différents — &lt;strong&gt;vin &amp;amp; spiritueux, conseil &amp;amp; PMO, immobilier, jeu vidéo, beauté &amp;amp; cosmétique&lt;/strong&gt; — avec la même exigence : comparer les options avant de choisir, tester sur des données réelles, documenter la décision.">I structure and analyse commercial data across very different sectors — <strong>wine &amp; spirits, consulting &amp; PMO, real estate, video games, beauty &amp; cosmetics</strong> — with the same standard: compare options before choosing, test on real data, document the decision.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="file:///C:/Users/AMAN/Downloads/index.html#dossiers">Voir les dossiers clients →</a>
-      <a class="btn btn-ghost" href="file:///C:/Users/AMAN/Downloads/index.html#methode">Ma méthode de veille</a>
+      <a class="btn btn-primary" href="file:///C:/Users/AMAN/Downloads/index_2.html#dossiers" data-en="View the projects →" data-fr="Voir les projets →">View the projects →</a>
+      <a class="btn btn-ghost" href="file:///C:/Users/AMAN/Downloads/index_2.html#methode" data-en="My research method" data-fr="Ma méthode de veille">My research method</a>
     </div>
 
     <div class="ledger">
       <div class="ledger-cell">
-        <div class="ledger-num mono">05</div>
-        <div class="ledger-label">Dossiers clients</div>
+        <div class="ledger-num mono">06</div>
+        <div class="ledger-label" data-en="Projects" data-fr="Projets">Projects</div>
       </div>
       <div class="ledger-cell">
-        <div class="ledger-num mono">04</div>
-        <div class="ledger-label">Secteurs couverts</div>
+        <div class="ledger-num mono">05</div>
+        <div class="ledger-label" data-en="Sectors covered" data-fr="Secteurs couverts">Sectors covered</div>
       </div>
       <div class="ledger-cell">
         <div class="ledger-num mono">FR·EN·HI</div>
-        <div class="ledger-label">Langues de travail</div>
+        <div class="ledger-label" data-en="Working languages" data-fr="Langues de travail">Working languages</div>
       </div>
       <div class="ledger-cell">
         <div class="ledger-num mono">100%</div>
-        <div class="ledger-label">Résultats vérifiés sur données réelles</div>
+        <div class="ledger-label" data-en="Results verified on real data" data-fr="Résultats vérifiés sur données réelles">Results verified on real data</div>
       </div>
     </div>
   </div>
@@ -357,63 +379,63 @@
 <section id="methode">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Comment je travaille</div>
-      <h2>Une veille documentée,<br>pas une intuition.</h2>
-      <p class="lede">Avant d'appliquer une méthode, je vérifie qu'elle est la bonne pour les données que j'ai sous la main. Ce principe traverse tous mes dossiers, et prend une forme systématique dès qu'un choix technique doit être justifié devant un client ou une équipe.</p>
+      <div class="eyebrow" data-en="How I work" data-fr="Comment je travaille">How I work</div>
+      <h2 data-en="Documented research,&lt;br&gt;not intuition." data-fr="Une veille documentée,&lt;br&gt;pas une intuition.">Documented research,<br>not intuition.</h2>
+      <p class="lede" data-en="Before applying a method, I check that it is the right one for the data in front of me. This principle runs through all my projects and becomes systematic whenever a technical choice has to be justified to a client or a team." data-fr="Avant d'appliquer une méthode, je vérifie qu'elle est la bonne pour les données que j'ai sous la main. Ce principe traverse tous mes dossiers, et prend une forme systématique dès qu'un choix technique doit être justifié devant un client ou une équipe.">Before applying a method, I check that it is the right one for the data in front of me. This principle runs through all my projects and becomes systematic whenever a technical choice has to be justified to a client or a team.</p>
     </div>
 
     <div class="method-steps">
       <div class="method-step">
         <div class="n mono">01</div>
-        <h4>Besoin</h4>
-        <p>Identifier une limite concrète dans l'analyse ou le livrable existant.</p>
+        <h4 data-en="Need" data-fr="Besoin">Need</h4>
+        <p data-en="Identify a concrete limitation in the existing analysis or deliverable." data-fr="Identifier une limite concrète dans l'analyse ou le livrable existant.">Identify a concrete limitation in the existing analysis or deliverable.</p>
       </div>
       <div class="method-step">
         <div class="n mono">02</div>
-        <h4>Panel</h4>
-        <p>Comparer au moins deux méthodes ou outils, avec leurs sources.</p>
+        <h4 data-en="Shortlist" data-fr="Panel">Shortlist</h4>
+        <p data-en="Compare at least two methods or tools, with their sources." data-fr="Comparer au moins deux méthodes ou outils, avec leurs sources.">Compare at least two methods or tools, with their sources.</p>
       </div>
       <div class="method-step">
         <div class="n mono">03</div>
-        <h4>Critères</h4>
-        <p>Qualité, robustesse, temps, reproductibilité, conformité.</p>
+        <h4 data-en="Criteria" data-fr="Critères">Criteria</h4>
+        <p data-en="Quality, robustness, time, reproducibility, compliance." data-fr="Qualité, robustesse, temps, reproductibilité, conformité.">Quality, robustness, time, reproducibility, compliance.</p>
       </div>
       <div class="method-step">
         <div class="n mono">04</div>
-        <h4>Test réel</h4>
-        <p>Exécution sur le jeu de données du client, pas un exemple jouet.</p>
+        <h4 data-en="Real test" data-fr="Test réel">Real test</h4>
+        <p data-en="Run on the client's actual dataset, not a toy example." data-fr="Exécution sur le jeu de données du client, pas un exemple jouet.">Run on the client's actual dataset, not a toy example.</p>
       </div>
       <div class="method-step">
         <div class="n mono">05</div>
-        <h4>Décision</h4>
-        <p>Un choix justifié par des résultats chiffrés, pas par défaut.</p>
+        <h4 data-en="Decision" data-fr="Décision">Decision</h4>
+        <p data-en="A choice backed by measured results, not made by default." data-fr="Un choix justifié par des résultats chiffrés, pas par défaut.">A choice backed by measured results, not made by default.</p>
       </div>
     </div>
 
     <div class="proof">
-      <div class="proof-tag">Preuve à l'appui — dossier BottleNeck (P06)</div>
-      <h3>Deux arbitrages menés sur un même catalogue de 714 produits</h3>
+      <div class="proof-tag" data-en="Supporting evidence — BottleNeck project (P06)" data-fr="Preuve à l'appui — projet BottleNeck (P06)">Supporting evidence — BottleNeck project (P06)</div>
+      <h3 data-en="Two trade-offs studied on the same 714-product catalogue" data-fr="Deux arbitrages menés sur un même catalogue de 714 produits">Two trade-offs studied on the same 714-product catalogue</h3>
 
       <div class="proof-grid">
         <div class="compare">
-          <div class="compare-head"><span>Corrélation</span><span>Pearson vs Spearman</span></div>
-          <div class="compare-row"><span>Normalité des variables (Shapiro-Wilk)</span><span>rejetée, p&lt;0,001</span></div>
-          <div class="compare-row"><span>stock / ventes — Pearson</span><span>r = 0,439</span></div>
-          <div class="compare-row win"><span>stock / ventes — Spearman</span><span>ρ = 0,759</span></div>
-          <div class="compare-row"><span>Écart maximal mesuré</span><span>0,465</span></div>
+          <div class="compare-head"><span data-en="Correlation" data-fr="Corrélation">Correlation</span><span>Pearson vs Spearman</span></div>
+          <div class="compare-row"><span data-en="Variable normality (Shapiro-Wilk)" data-fr="Normalité des variables (Shapiro-Wilk)">Variable normality (Shapiro-Wilk)</span><span data-en="rejected, p&lt;0.001" data-fr="rejetée, p&amp;lt;0,001">rejected, p&lt;0.001</span></div>
+          <div class="compare-row"><span data-en="stock / sales — Pearson" data-fr="stock / ventes — Pearson">stock / sales — Pearson</span><span data-en="r = 0.439" data-fr="r = 0,439">r = 0.439</span></div>
+          <div class="compare-row win"><span data-en="stock / sales — Spearman" data-fr="stock / ventes — Spearman">stock / sales — Spearman</span><span data-en="ρ = 0.759" data-fr="ρ = 0,759">ρ = 0.759</span></div>
+          <div class="compare-row"><span data-en="Maximum gap measured" data-fr="Écart maximal mesuré">Maximum gap measured</span><span data-en="0.465" data-fr="0,465">0.465</span></div>
         </div>
         <div class="compare">
           <div class="compare-head"><span>Segmentation</span><span>K-Means vs DBSCAN</span></div>
-          <div class="compare-row"><span>K-Means (k=3) — silhouette</span><span>0,382</span></div>
-          <div class="compare-row"><span>DBSCAN — silhouette</span><span>0,590</span></div>
-          <div class="compare-row win"><span>Segments actionnables retenus</span><span>3 (404 / 281 / 28)</span></div>
-          <div class="compare-row"><span>Produits classés hors-segment (DBSCAN)</span><span>1,3 %</span></div>
+          <div class="compare-row"><span>K-Means (k=3) — silhouette</span><span data-en="0.382" data-fr="0,382">0.382</span></div>
+          <div class="compare-row"><span>DBSCAN — silhouette</span><span data-en="0.590" data-fr="0,590">0.590</span></div>
+          <div class="compare-row win"><span data-en="Actionable segments kept" data-fr="Segments actionnables retenus">Actionable segments kept</span><span>3 (404 / 281 / 28)</span></div>
+          <div class="compare-row"><span data-en="Products left out of any segment (DBSCAN)" data-fr="Produits classés hors-segment (DBSCAN)">Products left out of any segment (DBSCAN)</span><span data-en="1.3%" data-fr="1,3 %">1.3%</span></div>
         </div>
       </div>
 
-      <div class="decision">
-        <strong>Décision :</strong> Spearman a été retenu pour la corrélation — aucune variable n'étant normalement distribuée, Pearson sous-estimait la relation stock/ventes. Pour la segmentation, K-Means a été préféré malgré un score plus faible : ses trois groupes équilibrés sont directement exploitables par une équipe achats, quand DBSCAN se contente d'isoler les cas extrêmes. Chaque test a été exécuté sur les données réelles, avec traçabilité complète (jeu de données versionné, empreinte SHA-256, notebook annoté cellule par cellule).
-      </div>
+      <div class="decision" data-en="&lt;strong&gt;Decision:&lt;/strong&gt; Spearman was chosen for the correlation — since no variable is normally distributed, Pearson underestimated the stock/sales relationship. For segmentation, K-Means was preferred despite a lower score: its three balanced groups can be used directly by a purchasing team, whereas DBSCAN only isolates extreme cases. Every test was run on real data, with full traceability (versioned dataset, SHA-256 fingerprint, notebook annotated cell by cell)." data-fr="
+        &lt;strong&gt;Décision :&lt;/strong&gt; Spearman a été retenu pour la corrélation — aucune variable n'étant normalement distribuée, Pearson sous-estimait la relation stock/ventes. Pour la segmentation, K-Means a été préféré malgré un score plus faible : ses trois groupes équilibrés sont directement exploitables par une équipe achats, quand DBSCAN se contente d'isoler les cas extrêmes. Chaque test a été exécuté sur les données réelles, avec traçabilité complète (jeu de données versionné, empreinte SHA-256, notebook annoté cellule par cellule).
+      "><strong>Decision:</strong> Spearman was chosen for the correlation — since no variable is normally distributed, Pearson underestimated the stock/sales relationship. For segmentation, K-Means was preferred despite a lower score: its three balanced groups can be used directly by a purchasing team, whereas DBSCAN only isolates extreme cases. Every test was run on real data, with full traceability (versioned dataset, SHA-256 fingerprint, notebook annotated cell by cell).</div>
     </div>
   </div>
 </section>
@@ -422,16 +444,16 @@
 <section id="dossiers">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Preuves de savoir-faire</div>
-      <h2>Dossiers clients</h2>
-      <p class="lede">Cinq missions, quatre secteurs. Chaque dossier suit la même grille de lecture : contexte, données, démarche, résultats, limites — pour que vous puissiez évaluer mon niveau sans avoir à deviner.</p>
+      <div class="eyebrow" data-en="Proof of skills" data-fr="Preuves de savoir-faire">Proof of skills</div>
+      <h2 data-en="Projects" data-fr="Projets">Projects</h2>
+      <p class="lede" data-en="Six projects, five sectors. Each project follows the same structure: context, data, approach, results, limitations — so you can assess my level without having to guess." data-fr="Six missions, cinq secteurs. Chaque projet suit la même grille de lecture : contexte, données, démarche, résultats, limites — pour que vous puissiez évaluer mon niveau sans avoir à deviner.">Six projects, five sectors. Each project follows the same structure: context, data, approach, results, limitations — so you can assess my level without having to guess.</p>
     </div>
 
     <!-- P06 — BottleNeck -->
     <article class="dossier reveal in">
       <div class="dossier-meta">
-        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P06</div>
-        <span class="sector-tag tag-vin">Vin &amp; spiritueux</span>
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P06</div>
+        <span class="sector-tag tag-vin" data-en="Wine &amp; spirits" data-fr="Vin &amp;amp; spiritueux">Wine &amp; spirits</span>
         <div class="stack-list">
           <span class="stack-pill">Python</span>
           <span class="stack-pill">pandas</span>
@@ -441,42 +463,42 @@
         </div>
       </div>
       <div class="dossier-body">
-        <h3>BottleNeck — nettoyer et fiabiliser un catalogue de 714 produits</h3>
-        <p class="dossier-sub">Optimiser la gestion et nettoyer les données de stock d'une boutique en ligne de vins et spiritueux.</p>
+        <h3 data-en="BottleNeck — cleaning and making a 714-product catalogue reliable" data-fr="BottleNeck — nettoyer et fiabiliser un catalogue de 714 produits">BottleNeck — cleaning and making a 714-product catalogue reliable</h3>
+        <p class="dossier-sub" data-en="Optimise management and clean the stock data of an online wine and spirits shop." data-fr="Optimiser la gestion et nettoyer les données de stock d'une boutique en ligne de vins et spiritueux.">Optimise management and clean the stock data of an online wine and spirits shop.</p>
 
         <div class="dblock">
-          <div class="dblock-label">Contexte / besoin métier</div>
-          <p>BottleNeck consolide trois exports (ERP, site web, table de correspondance) pour piloter son catalogue, mais les données brutes contiennent des incohérences (prix et stocks négatifs, doublons) qui faussent le pilotage commercial.</p>
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="BottleNeck consolidates three exports (ERP, website, mapping table) to manage its catalogue, but the raw data contains inconsistencies (negative prices and stocks, duplicates) that distort commercial decisions." data-fr="BottleNeck consolide trois exports (ERP, site web, table de correspondance) pour piloter son catalogue, mais les données brutes contiennent des incohérences (prix et stocks négatifs, doublons) qui faussent le pilotage commercial.">BottleNeck consolidates three exports (ERP, website, mapping table) to manage its catalogue, but the raw data contains inconsistencies (negative prices and stocks, duplicates) that distort commercial decisions.</p>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Données</div>
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
           <ul>
-            <li>3 exports sources : ERP (825 lignes), site web (1513 lignes), table de liaison (825 lignes)</li>
-            <li>Jeu consolidé final : 714 produits × 26 colonnes, sur 6 familles (vin à 92 % du catalogue)</li>
+            <li data-en="3 source exports: ERP (825 rows), website (1,513 rows), mapping table (825 rows)" data-fr="3 exports sources : ERP (825 lignes), site web (1513 lignes), table de liaison (825 lignes)">3 source exports: ERP (825 rows), website (1,513 rows), mapping table (825 rows)</li>
+            <li data-en="Final consolidated dataset: 714 products × 26 columns, across 6 families (wine is 92% of the catalogue)" data-fr="Jeu consolidé final : 714 produits × 26 colonnes, sur 6 familles (vin à 92 % du catalogue)">Final consolidated dataset: 714 products × 26 columns, across 6 families (wine is 92% of the catalogue)</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Démarche</div>
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
           <ul>
-            <li>Fusion des sources, correction des valeurs négatives, détection d'outliers (Z-score)</li>
-            <li>Audit qualité formalisé (% de manquants, doublons, distributions)</li>
-            <li>Veille comparative documentée sur deux axes : méthode de corrélation, puis algorithme de segmentation</li>
-            <li>Versionnement du jeu de données (raw → cleaned_v1) avec empreinte SHA-256 pour la traçabilité</li>
+            <li data-en="Merging sources, correcting negative values, detecting outliers (Z-score)" data-fr="Fusion des sources, correction des valeurs négatives, détection d'outliers (Z-score)">Merging sources, correcting negative values, detecting outliers (Z-score)</li>
+            <li data-en="Formal quality audit (% missing, duplicates, distributions)" data-fr="Audit qualité formalisé (% de manquants, doublons, distributions)">Formal quality audit (% missing, duplicates, distributions)</li>
+            <li data-en="Documented comparative research on two fronts: correlation method, then segmentation algorithm" data-fr="Veille comparative documentée sur deux axes : méthode de corrélation, puis algorithme de segmentation">Documented comparative research on two fronts: correlation method, then segmentation algorithm</li>
+            <li data-en="Dataset versioning (raw → cleaned_v1) with a SHA-256 fingerprint for traceability" data-fr="Versionnement du jeu de données (raw → cleaned_v1) avec empreinte SHA-256 pour la traçabilité">Dataset versioning (raw → cleaned_v1) with a SHA-256 fingerprint for traceability</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Résultats &amp; impact</div>
-          <div class="result-callout">La lecture par corrélation de rangs (Spearman) a <strong>révisé une conclusion erronée</strong> : stock et ventes sont en réalité fortement corrélés (0,759 contre 0,439 estimés par Pearson). La segmentation retenue isole <strong>28 produits « dormants haut de gamme »</strong> à surveiller en priorité pour éviter l'immobilisation financière.</div>
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="Rank correlation (Spearman) &lt;strong&gt;overturned an incorrect conclusion&lt;/strong&gt;: stock and sales are in fact strongly correlated (0.759 versus 0.439 as estimated by Pearson). The chosen segmentation isolates &lt;strong&gt;28 “high-end dormant” products&lt;/strong&gt; to monitor first, to avoid tied-up capital." data-fr="La lecture par corrélation de rangs (Spearman) a &lt;strong&gt;révisé une conclusion erronée&lt;/strong&gt; : stock et ventes sont en réalité fortement corrélés (0,759 contre 0,439 estimés par Pearson). La segmentation retenue isole &lt;strong&gt;28 produits « dormants haut de gamme »&lt;/strong&gt; à surveiller en priorité pour éviter l'immobilisation financière.">Rank correlation (Spearman) <strong>overturned an incorrect conclusion</strong>: stock and sales are in fact strongly correlated (0.759 versus 0.439 as estimated by Pearson). The chosen segmentation isolates <strong>28 “high-end dormant” products</strong> to monitor first, to avoid tied-up capital.</div>
         </div>
-        <p class="limits">Limites : photographie à un instant T, sans dimension temporelle — une prochaine itération gagnerait à intégrer plusieurs périodes pour suivre l'évolution des segments.</p>
+        <p class="limits" data-en="Limitations: a snapshot at a single point in time, with no time dimension — a next iteration would benefit from including several periods to track how segments evolve." data-fr="Limites : photographie à un instant T, sans dimension temporelle — une prochaine itération gagnerait à intégrer plusieurs périodes pour suivre l'évolution des segments.">Limitations: a snapshot at a single point in time, with no time dimension — a next iteration would benefit from including several periods to track how segments evolve.</p>
       </div>
     </article>
 
     <!-- P07 — Sanitoral -->
     <article class="dossier reveal in">
       <div class="dossier-meta">
-        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P07</div>
-        <span class="sector-tag tag-sante">Santé</span>
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P07</div>
+        <span class="sector-tag tag-pmo" data-en="Consulting &amp; PMO" data-fr="Conseil &amp;amp; PMO">Consulting &amp; PMO</span>
         <div class="stack-list">
           <span class="stack-pill">Power BI</span>
           <span class="stack-pill">DAX</span>
@@ -484,39 +506,39 @@
         </div>
       </div>
       <div class="dossier-body">
-        <h3>Sanitoral — un tableau de bord pour reprendre la main sur les délais projet</h3>
-        <p class="dossier-sub">Créer un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets dans une entreprise de santé.</p>
+        <h3 data-en="Sanitoral — a portfolio tracking dashboard for IT &amp; Marketing projects" data-fr="Sanitoral — un tableau de bord de suivi de portefeuille de projets IT &amp;amp; Marketing">Sanitoral — a portfolio tracking dashboard for IT &amp; Marketing projects</h3>
+        <p class="dossier-sub" data-en="Delivered as a Data Analyst for ESN DATA, for the client Sanitoral — scoped by Sophie, project manager in the Project Management Office." data-fr="Réalisé en tant que Data Analyst pour ESN DATA, pour le client Sanitoral — cadré par Sophie, cheffe de projet au sein du Project Management Office.">Delivered as a Data Analyst for ESN DATA, for the client Sanitoral — scoped by Sophie, project manager in the Project Management Office.</p>
 
         <div class="dblock">
-          <div class="dblock-label">Contexte / besoin métier</div>
-          <p>Une entreprise du secteur santé avait besoin d'un outil de suivi centralisé pour visualiser l'avancement de ses projets et repérer les retards avant qu'ils ne deviennent critiques.</p>
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="Sanitoral runs IT projects (6 phases) and Marketing projects (4 phases) in parallel, with no consolidated view of their progress. The goal: assess the performance of each project and give three decision-making profiles — General Manager, Regional Director, Country Director — a view suited to their scope." data-fr="Sanitoral pilote en parallèle des projets IT (6 phases) et Marketing (4 phases), sans vue consolidée de leur avancement. L'objectif : évaluer la performance de chaque projet et donner à trois profils décisionnaires — Directeur Général, Directeur Régional, Directeur de Pays — une lecture adaptée à leur périmètre.">Sanitoral runs IT projects (6 phases) and Marketing projects (4 phases) in parallel, with no consolidated view of their progress. The goal: assess the performance of each project and give three decision-making profiles — General Manager, Regional Director, Country Director — a view suited to their scope.</p>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Données</div>
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
           <ul>
-            <li>Données de suivi de projet (statuts, échéances, avancement) à intégrer dans un modèle Power BI</li>
+            <li data-en="Progress tracking of IT and Marketing projects, by phase, region and country" data-fr="Suivi d'avancement des projets IT et Marketing, par phase, région et pays">Progress tracking of IT and Marketing projects, by phase, region and country</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Démarche</div>
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
           <ul>
-            <li>Construction du modèle de données et des visuels de suivi</li>
-            <li>Mise en place de la sécurité au niveau ligne (Row Level Security) pour restreindre l'accès aux données selon le profil utilisateur — diagnostic et résolution des blocages d'accès rencontrés en configuration</li>
+            <li data-en="Data modelling and building visuals suited to each reading level (global, regional, country — with a world map for the Country Director)" data-fr="Modélisation des données et construction des visuels adaptés à chaque niveau de lecture (global, régional, pays — avec carte du monde pour le Directeur de Pays)">Data modelling and building visuals suited to each reading level (global, regional, country — with a world map for the Country Director)</li>
+            <li data-en="Setting up Row Level Security so that each profile only accesses data within its scope — diagnosing and resolving the access issues met during configuration" data-fr="Mise en place de la sécurité au niveau ligne (Row Level Security) pour que chaque profil n'accède qu'aux données de son périmètre — diagnostic et résolution des blocages d'accès rencontrés en configuration">Setting up Row Level Security so that each profile only accesses data within its scope — diagnosing and resolving the access issues met during configuration</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Résultats &amp; impact</div>
-          <div class="result-callout">Un tableau de bord opérationnel où chaque utilisateur ne voit que les données qui le concernent, sans compromis sur la sécurité des accès.</div>
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="A single dashboard where the &lt;strong&gt;General Manager&lt;/strong&gt; monitors overall performance gaps to decide whether to stop or continue a project, while the &lt;strong&gt;Regional Director&lt;/strong&gt; and the &lt;strong&gt;Country Director&lt;/strong&gt; get alerts and corrective indicators at their own level — with no access to data outside their scope." data-fr="Un tableau de bord unique où le &lt;strong&gt;Directeur Général&lt;/strong&gt; surveille les écarts de performance globale pour arbitrer l'arrêt ou la poursuite d'un projet, tandis que le &lt;strong&gt;Directeur Régional&lt;/strong&gt; et le &lt;strong&gt;Directeur de Pays&lt;/strong&gt; disposent d'alertes et d'indicateurs correctifs à leur échelle — sans accès aux données hors de leur périmètre.">A single dashboard where the <strong>General Manager</strong> monitors overall performance gaps to decide whether to stop or continue a project, while the <strong>Regional Director</strong> and the <strong>Country Director</strong> get alerts and corrective indicators at their own level — with no access to data outside their scope.</div>
         </div>
-        <p class="limits">Limites : dossier à enrichir de métriques précises sur les gains de délai constatés — une v2 est prévue pour formaliser des KPI de suivi comparables aux autres dossiers.</p>
+        <p class="limits" data-en="Limitations: this project needs precise metrics on the time savings observed since go-live." data-fr="Limites : dossier à enrichir de métriques précises sur les gains de délai constatés depuis la mise en service.">Limitations: this project needs precise metrics on the time savings observed since go-live.</p>
       </div>
     </article>
 
     <!-- P08 — Immobilier -->
     <article class="dossier reveal in">
       <div class="dossier-meta">
-        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P08</div>
-        <span class="sector-tag tag-immo">Immobilier</span>
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P08</div>
+        <span class="sector-tag tag-immo" data-en="Real estate" data-fr="Immobilier">Real estate</span>
         <div class="stack-list">
           <span class="stack-pill">Python</span>
           <span class="stack-pill">pandas</span>
@@ -525,116 +547,155 @@
         </div>
       </div>
       <div class="dossier-body">
-        <h3>Marché immobilier parisien — valoriser un portefeuille et détecter des opportunités</h3>
-        <p class="dossier-sub">Analyser l'évolution des prix de l'immobilier avec Python pour accompagner un changement de stratégie client.</p>
+        <h3 data-en="Paris property market — valuing a portfolio and spotting opportunities" data-fr="Marché immobilier parisien — valoriser un portefeuille et détecter des opportunités">Paris property market — valuing a portfolio and spotting opportunities</h3>
+        <p class="dossier-sub" data-en="Analyse real estate price trends with Python to support a client's change of strategy." data-fr="Analyser l'évolution des prix de l'immobilier avec Python pour accompagner un changement de stratégie client.">Analyse real estate price trends with Python to support a client's change of strategy.</p>
 
         <div class="dblock">
-          <div class="dblock-label">Contexte / besoin métier</div>
-          <p>Un client souhaitait comprendre la dynamique des prix immobiliers à Paris pour réorienter sa stratégie d'investissement et identifier de futures opportunités.</p>
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="A client wanted to understand property price dynamics in Paris in order to redirect their investment strategy and identify future opportunities." data-fr="Un client souhaitait comprendre la dynamique des prix immobiliers à Paris pour réorienter sa stratégie d'investissement et identifier de futures opportunités.">A client wanted to understand property price dynamics in Paris in order to redirect their investment strategy and identify future opportunities.</p>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Données</div>
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
           <ul>
-            <li>Annonces immobilières couvrant les 20 arrondissements parisiens (prix, code postal, type de bien)</li>
+            <li data-en="Property listings covering all 20 Paris arrondissements (price, postcode, property type)" data-fr="Annonces immobilières couvrant les 20 arrondissements parisiens (prix, code postal, type de bien)">Property listings covering all 20 Paris arrondissements (price, postcode, property type)</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Démarche</div>
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
           <ul>
-            <li>Analyse exploratoire par arrondissement, encodage des variables catégorielles (code postal, type de bien)</li>
-            <li>Modèle de régression linéaire pour la valorisation, appliqué à un portefeuille de biens à évaluer</li>
-            <li>Segmentation par K-Means (2 clusters) pour distinguer logements et locaux commerciaux selon le prix au m²</li>
+            <li data-en="Exploratory analysis by arrondissement, encoding of categorical variables (postcode, property type)" data-fr="Analyse exploratoire par arrondissement, encodage des variables catégorielles (code postal, type de bien)">Exploratory analysis by arrondissement, encoding of categorical variables (postcode, property type)</li>
+            <li data-en="Linear regression model for valuation, applied to a portfolio of properties to be appraised" data-fr="Modèle de régression linéaire pour la valorisation, appliqué à un portefeuille de biens à évaluer">Linear regression model for valuation, applied to a portfolio of properties to be appraised</li>
+            <li data-en="K-Means segmentation (2 clusters) to tell homes from commercial premises by price per m²" data-fr="Segmentation par K-Means (2 clusters) pour distinguer logements et locaux commerciaux selon le prix au m²">K-Means segmentation (2 clusters) to tell homes from commercial premises by price per m²</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Résultats &amp; impact</div>
-          <div class="result-callout">Modèle de valorisation avec un <strong>R² ≈ 0,98</strong> sur le jeu de test, et une séparation nette entre biens résidentiels et commerciaux, exploitable pour prioriser les biens du portefeuille client.</div>
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="Valuation model with an &lt;strong&gt;R² ≈ 0.98&lt;/strong&gt; on the test set, and a clear separation between residential and commercial properties, which can be used to prioritise the client's portfolio." data-fr="Modèle de valorisation avec un &lt;strong&gt;R² ≈ 0,98&lt;/strong&gt; sur le jeu de test, et une séparation nette entre biens résidentiels et commerciaux, exploitable pour prioriser les biens du portefeuille client.">Valuation model with an <strong>R² ≈ 0.98</strong> on the test set, and a clear separation between residential and commercial properties, which can be used to prioritise the client's portfolio.</div>
         </div>
-        <p class="limits">Limites : un R² aussi élevé appelle une vérification de fuite de données avant mise en production ; le modèle reste à valider sur un jeu totalement externe.</p>
+        <p class="limits" data-en="Limitations: an R² this high calls for a data-leakage check before going into production; the model still needs validating on a fully external dataset." data-fr="Limites : un R² aussi élevé appelle une vérification de fuite de données avant mise en production ; le modèle reste à valider sur un jeu totalement externe.">Limitations: an R² this high calls for a data-leakage check before going into production; the model still needs validating on a fully external dataset.</p>
       </div>
     </article>
 
     <!-- P09 — Boissons Power BI -->
     <article class="dossier reveal in">
       <div class="dossier-meta">
-        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P09</div>
-        <span class="sector-tag tag-vin">Vin &amp; spiritueux</span>
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P09</div>
+        <span class="sector-tag tag-vin" data-en="Wine &amp; spirits" data-fr="Vin &amp;amp; spiritueux">Wine &amp; spirits</span>
         <div class="stack-list">
           <span class="stack-pill">Power BI</span>
           <span class="stack-pill">DAX</span>
-          <span class="stack-pill">Modélisation</span>
+          <span class="stack-pill" data-en="Modelling" data-fr="Modélisation">Modelling</span>
         </div>
       </div>
       <div class="dossier-body">
-        <h3>Boutique de vin — piloter marge, stock et promotions au même endroit</h3>
-        <p class="dossier-sub">Créer un tableau de bord dynamique avec Power BI et optimiser la performance commerciale d'une boutique de vin.</p>
+        <h3 data-en="Wine shop — managing margin, stock and promotions in one place" data-fr="Boutique de vin — piloter marge, stock et promotions au même endroit">Wine shop — managing margin, stock and promotions in one place</h3>
+        <p class="dossier-sub" data-en="Build a dynamic Power BI dashboard and optimise the commercial performance of a wine shop." data-fr="Créer un tableau de bord dynamique avec Power BI et optimiser la performance commerciale d'une boutique de vin.">Build a dynamic Power BI dashboard and optimise the commercial performance of a wine shop.</p>
 
         <div class="dblock">
-          <div class="dblock-label">Contexte / besoin métier</div>
-          <p>Une boutique de vins et spiritueux avait besoin d'un outil unique pour suivre marges, rotation de stock et efficacité des promotions, jusque-là dispersés dans plusieurs fichiers.</p>
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="A wine and spirits shop needed a single tool to track margins, stock turnover and promotion effectiveness, which until then were scattered across several files." data-fr="Une boutique de vins et spiritueux avait besoin d'un outil unique pour suivre marges, rotation de stock et efficacité des promotions, jusque-là dispersés dans plusieurs fichiers.">A wine and spirits shop needed a single tool to track margins, stock turnover and promotion effectiveness, which until then were scattered across several files.</p>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Données</div>
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
           <ul>
-            <li>Modèle relationnel à 5 tables autour d'un hub Finance (Ventes, Promotions, Web, Calendrier)</li>
+            <li data-en="Relational model with 5 tables around a Finance hub (Sales, Promotions, Web, Calendar)" data-fr="Modèle relationnel à 5 tables autour d'un hub Finance (Ventes, Promotions, Web, Calendrier)">Relational model with 5 tables around a Finance hub (Sales, Promotions, Web, Calendar)</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Démarche</div>
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
           <ul>
-            <li>Mesures DAX pour la marge, la rotation de stock, le ROI promotionnel et les comparaisons mois par mois</li>
-            <li>Indicateurs visuels de statut de marge, thème graphique dédié</li>
-            <li>4 pages d'analyse (Vue d'ensemble, Ventes &amp; Produits, Stock &amp; Marge, Performance Promo) + une page de recommandations</li>
+            <li data-en="DAX measures for margin, stock turnover, promotional ROI and month-over-month comparisons" data-fr="Mesures DAX pour la marge, la rotation de stock, le ROI promotionnel et les comparaisons mois par mois">DAX measures for margin, stock turnover, promotional ROI and month-over-month comparisons</li>
+            <li data-en="Visual margin-status indicators, custom graphic theme" data-fr="Indicateurs visuels de statut de marge, thème graphique dédié">Visual margin-status indicators, custom graphic theme</li>
+            <li data-en="4 analysis pages (Overview, Sales &amp; Products, Stock &amp; Margin, Promo Performance) + a recommendations page" data-fr="4 pages d'analyse (Vue d'ensemble, Ventes &amp;amp; Produits, Stock &amp;amp; Marge, Performance Promo) + une page de recommandations">4 analysis pages (Overview, Sales &amp; Products, Stock &amp; Margin, Promo Performance) + a recommendations page</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Résultats &amp; impact</div>
-          <div class="result-callout">Un dashboard multi-pages livré avec un rapport Word formel, donnant à l'équipe une vue mensuelle consolidée de la performance commerciale et une page dédiée aux recommandations d'action.</div>
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="A multi-page dashboard delivered with a formal Word report, giving the team a consolidated monthly view of commercial performance and a page dedicated to action recommendations." data-fr="Un dashboard multi-pages livré avec un rapport Word formel, donnant à l'équipe une vue mensuelle consolidée de la performance commerciale et une page dédiée aux recommandations d'action.">A multi-page dashboard delivered with a formal Word report, giving the team a consolidated monthly view of commercial performance and a page dedicated to action recommendations.</div>
         </div>
-        <p class="limits">Limites : les seuils de marge sont actuellement fixes — un prochain incrément pourrait les recalibrer automatiquement par famille de produits.</p>
+        <p class="limits" data-en="Limitations: margin thresholds are currently fixed — a next increment could recalibrate them automatically by product family." data-fr="Limites : les seuils de marge sont actuellement fixes — un prochain incrément pourrait les recalibrer automatiquement par famille de produits.">Limitations: margin thresholds are currently fixed — a next increment could recalibrate them automatically by product family.</p>
       </div>
     </article>
 
     <!-- P10 — UOI Games -->
     <article class="dossier reveal in">
       <div class="dossier-meta">
-        <div class="dossier-num"><span class="p mono">DOSSIER</span><br>P10</div>
-        <span class="sector-tag tag-gaming">Jeu vidéo</span>
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P10</div>
+        <span class="sector-tag tag-gaming" data-en="Video games" data-fr="Jeu vidéo">Video games</span>
         <div class="stack-list">
           <span class="stack-pill">Excel</span>
           <span class="stack-pill">PESTEL/SWOT</span>
-          <span class="stack-pill">Enquête</span>
+          <span class="stack-pill" data-en="Survey" data-fr="Enquête">Survey</span>
           <span class="stack-pill">Pearson</span>
         </div>
       </div>
       <div class="dossier-body">
-        <h3>UOI Games — identifier les segments de marché avant un premier AAA</h3>
-        <p class="dossier-sub">Analyser une demande business et identifier les segments du marché les plus pertinents pour un studio qui prépare son premier jeu AAA.</p>
+        <h3 data-en="UOI Games — identifying market segments before a first AAA title" data-fr="UOI Games — identifier les segments de marché avant un premier AAA">UOI Games — identifying market segments before a first AAA title</h3>
+        <p class="dossier-sub" data-en="Analyse a business request and identify the most relevant market segments for a studio preparing its first AAA game." data-fr="Analyser une demande business et identifier les segments du marché les plus pertinents pour un studio qui prépare son premier jeu AAA.">Analyse a business request and identify the most relevant market segments for a studio preparing its first AAA game.</p>
 
         <div class="dblock">
-          <div class="dblock-label">Contexte / besoin métier</div>
-          <p>UOI Games envisageait son premier jeu AAA (RPG/FPS) et avait besoin d'objectiver l'opportunité : quel genre, quelle plateforme, quel positionnement, avant d'engager le budget.</p>
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="UOI Games was considering its first AAA game (RPG/FPS) and needed to assess the opportunity objectively: which genre, which platform, which positioning, before committing the budget." data-fr="UOI Games envisageait son premier jeu AAA (RPG/FPS) et avait besoin d'objectiver l'opportunité : quel genre, quelle plateforme, quel positionnement, avant d'engager le budget.">UOI Games was considering its first AAA game (RPG/FPS) and needed to assess the opportunity objectively: which genre, which platform, which positioning, before committing the budget.</p>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Données</div>
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
           <ul>
-            <li>3 jeux de données croisés : ventes de jeux vidéo, ventes de consoles, données éditeurs</li>
-            <li>Enquête originale (10+ questions, ~3 min, anonyme) menée pour la segmentation du marché</li>
+            <li data-en="3 cross-referenced datasets: video game sales, console sales, publisher data" data-fr="3 jeux de données croisés : ventes de jeux vidéo, ventes de consoles, données éditeurs">3 cross-referenced datasets: video game sales, console sales, publisher data</li>
+            <li data-en="Original survey (10+ questions, ~3 min, anonymous) conducted for market segmentation" data-fr="Enquête originale (10+ questions, ~3 min, anonyme) menée pour la segmentation du marché">Original survey (10+ questions, ~3 min, anonymous) conducted for market segmentation</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Démarche</div>
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
           <ul>
-            <li>Analyse PESTEL/SWOT du marché avant l'analyse chiffrée</li>
-            <li>Benchmark des meilleurs titres RPG/FPS, tests de corrélation (Pearson) sur les ventes</li>
-            <li>Recommandation de plateformes de lancement, restitution en classeur Excel à formules dynamiques, deck de 19 slides et rapport Word</li>
+            <li data-en="PESTEL/SWOT analysis of the market before the quantitative analysis" data-fr="Analyse PESTEL/SWOT du marché avant l'analyse chiffrée">PESTEL/SWOT analysis of the market before the quantitative analysis</li>
+            <li data-en="Benchmark of top RPG/FPS titles, correlation tests (Pearson) on sales" data-fr="Benchmark des meilleurs titres RPG/FPS, tests de corrélation (Pearson) sur les ventes">Benchmark of top RPG/FPS titles, correlation tests (Pearson) on sales</li>
+            <li data-en="Launch platform recommendation, delivered as an Excel workbook with dynamic formulas, a 19-slide deck and a Word report" data-fr="Recommandation de plateformes de lancement, restitution en classeur Excel à formules dynamiques, deck de 19 slides et rapport Word">Launch platform recommendation, delivered as an Excel workbook with dynamic formulas, a 19-slide deck and a Word report</li>
           </ul>
         </div>
         <div class="dblock">
-          <div class="dblock-label">Résultats &amp; impact</div>
-          <div class="result-callout">Recommandation de prioriser <strong>PS5, Xbox et PC avant la Switch</strong> pour un premier AAA RPG/FPS, appuyée par le benchmark et les résultats de l'enquête de segmentation.</div>
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="Recommendation to prioritise &lt;strong&gt;PS5, Xbox and PC before the Switch&lt;/strong&gt; for a first AAA RPG/FPS, backed by the benchmark and the segmentation survey results." data-fr="Recommandation de prioriser &lt;strong&gt;PS5, Xbox et PC avant la Switch&lt;/strong&gt; pour un premier AAA RPG/FPS, appuyée par le benchmark et les résultats de l'enquête de segmentation.">Recommendation to prioritise <strong>PS5, Xbox and PC before the Switch</strong> for a first AAA RPG/FPS, backed by the benchmark and the segmentation survey results.</div>
         </div>
-        <p class="limits">Limites : l'enquête repose sur du déclaratif et un échantillon non garanti représentatif ; les tests de corrélation gagneraient aujourd'hui à être doublés d'une lecture Spearman, comme pratiqué depuis sur le dossier BottleNeck.</p>
+        <p class="limits" data-en="Limitations: the survey relies on self-reported answers and a sample not guaranteed to be representative; the correlation tests would now benefit from a Spearman reading alongside, as done since on the BottleNeck project." data-fr="Limites : l'enquête repose sur du déclaratif et un échantillon non garanti représentatif ; les tests de corrélation gagneraient aujourd'hui à être doublés d'une lecture Spearman, comme pratiqué depuis sur le projet BottleNeck.">Limitations: the survey relies on self-reported answers and a sample not guaranteed to be representative; the correlation tests would now benefit from a Spearman reading alongside, as done since on the BottleNeck project.</p>
+      </div>
+    </article>
+
+    <!-- P12 — Matis Paris -->
+    <article class="dossier reveal in">
+      <div class="dossier-meta">
+        <div class="dossier-num"><span class="p mono" data-en="PROJECT" data-fr="PROJET">PROJECT</span><br>P12</div>
+        <span class="sector-tag tag-beaute" data-en="Beauty &amp; cosmetics" data-fr="Beauté &amp;amp; cosmétique">Beauty &amp; cosmetics</span>
+        <div class="stack-list">
+          <span class="stack-pill">Excel</span>
+          <span class="stack-pill">Consolidation</span>
+        </div>
+      </div>
+      <div class="dossier-body">
+        <h3 data-en="Matis Paris — quantities sold during a promotion period" data-fr="Matis Paris — quantités vendues en période de promotion">Matis Paris — quantities sold during a promotion period</h3>
+        <p class="dossier-sub" data-en="Calculate the quantities sold of a skincare brand's gift sets and products during a promotional period." data-fr="Calculer les quantités vendues des coffrets et produits d'une marque de soins de la peau pendant une période promotionnelle.">Calculate the quantities sold of a skincare brand's gift sets and products during a promotional period.</p>
+        <p class="dossier-link"><a href="https://www.matis-paris.com/fr" target="_blank" rel="noopener noreferrer" data-en="Visit matis-paris.com ↗" data-fr="Voir le site matis-paris.com ↗">Visit matis-paris.com ↗</a></p>
+
+        <div class="dblock">
+          <div class="dblock-label" data-en="Context / business need" data-fr="Contexte / besoin métier">Context / business need</div>
+          <p data-en="Matis Paris, a skincare brand, needs to know precisely how many gift sets and products were sold during a promotion period, in order to assess how the operation performed." data-fr="Matis Paris, marque de soins de la peau, a besoin de connaître précisément les quantités vendues de ses coffrets et produits durant une période de promotion, pour évaluer la performance de l'opération.">Matis Paris, a skincare brand, needs to know precisely how many gift sets and products were sold during a promotion period, in order to assess how the operation performed.</p>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label" data-en="Data" data-fr="Données">Data</div>
+          <ul>
+            <li data-en="Several separate Excel files, to be consolidated to rebuild gift set / product sales over the promo period" data-fr="Plusieurs fichiers Excel distincts, à consolider pour reconstituer les ventes coffrets/produits sur la période promo">Several separate Excel files, to be consolidated to rebuild gift set / product sales over the promo period</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label" data-en="Approach" data-fr="Démarche">Approach</div>
+          <ul>
+            <li data-en="Reconciling and consolidating the different Excel files" data-fr="Rapprochement et consolidation des différents fichiers Excel">Reconciling and consolidating the different Excel files</li>
+            <li data-en="Calculating the quantities sold per gift set and per product over the promotion period" data-fr="Calcul des quantités vendues par coffret et par produit sur la période de promotion">Calculating the quantities sold per gift set and per product over the promotion period</li>
+          </ul>
+        </div>
+        <div class="dblock">
+          <div class="dblock-label" data-en="Results &amp; impact" data-fr="Résultats &amp;amp; impact">Results &amp; impact</div>
+          <div class="result-callout" data-en="Built an Excel file showing the promotion period and the quantities sold per gift set and per product, to evaluate how the operation performed." data-fr="Construction d'un fichier Excel présentant la période de promotion et les quantités vendues par coffret et par produit, pour évaluer la performance de l'opération.">Built an Excel file showing the promotion period and the quantities sold per gift set and per product, to evaluate how the operation performed.</div>
+        </div>
       </div>
     </article>
 
@@ -645,35 +706,35 @@
 <section id="competences">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Boîte à outils</div>
-      <h2>Compétences &amp; outils</h2>
-      <p class="lede">Les mêmes outils reviennent d'un secteur à l'autre — c'est la rigueur de la démarche qui s'adapte au contexte, pas l'inverse.</p>
+      <div class="eyebrow" data-en="Toolbox" data-fr="Boîte à outils">Toolbox</div>
+      <h2 data-en="Skills &amp; tools" data-fr="Compétences &amp;amp; outils">Skills &amp; tools</h2>
+      <p class="lede" data-en="The same tools come back from one sector to the next — it is the rigour of the approach that adapts to the context, not the other way round." data-fr="Les mêmes outils reviennent d'un secteur à l'autre — c'est la rigueur de la démarche qui s'adapte au contexte, pas l'inverse.">The same tools come back from one sector to the next — it is the rigour of the approach that adapts to the context, not the other way round.</p>
     </div>
 
     <div class="skills-grid">
       <div class="skill-card">
-        <h4>Analyse &amp; data science</h4>
-        <div class="tools">Python · pandas · scikit-learn<br>scipy · statistiques (Pearson,<br>Spearman, Shapiro-Wilk)</div>
+        <h4 data-en="Analysis &amp; data science" data-fr="Analyse &amp;amp; data science">Analysis &amp; data science</h4>
+        <div class="tools" data-en="Python · pandas · scikit-learn&lt;br&gt;scipy · statistics (Pearson,&lt;br&gt;Spearman, Shapiro-Wilk)" data-fr="Python · pandas · scikit-learn&lt;br&gt;scipy · statistiques (Pearson,&lt;br&gt;Spearman, Shapiro-Wilk)">Python · pandas · scikit-learn<br>scipy · statistics (Pearson,<br>Spearman, Shapiro-Wilk)</div>
       </div>
       <div class="skill-card">
-        <h4>Bases de données</h4>
-        <div class="tools">SQL · modélisation relationnelle<br>schémas &amp; dictionnaires de données</div>
+        <h4 data-en="Databases" data-fr="Bases de données">Databases</h4>
+        <div class="tools" data-en="SQL · relational modelling&lt;br&gt;schemas &amp; data dictionaries" data-fr="SQL · modélisation relationnelle&lt;br&gt;schémas &amp;amp; dictionnaires de données">SQL · relational modelling<br>schemas &amp; data dictionaries</div>
       </div>
       <div class="skill-card">
         <h4>Business Intelligence</h4>
-        <div class="tools">Power BI · DAX · Power Query<br>Row Level Security · Excel avancé</div>
+        <div class="tools" data-en="Power BI · DAX · Power Query&lt;br&gt;Row Level Security · Advanced Excel" data-fr="Power BI · DAX · Power Query&lt;br&gt;Row Level Security · Excel avancé">Power BI · DAX · Power Query<br>Row Level Security · Advanced Excel</div>
       </div>
       <div class="skill-card">
         <h4>Machine Learning</h4>
-        <div class="tools">Régression linéaire · K-Means<br>DBSCAN · évaluation de modèles</div>
+        <div class="tools" data-en="Linear regression · K-Means&lt;br&gt;DBSCAN · model evaluation" data-fr="Régression linéaire · K-Means&lt;br&gt;DBSCAN · évaluation de modèles">Linear regression · K-Means<br>DBSCAN · model evaluation</div>
       </div>
       <div class="skill-card">
-        <h4>Méthode &amp; conformité</h4>
-        <div class="tools">Veille technologique documentée<br>cahiers des charges · RGPD</div>
+        <h4 data-en="Method &amp; compliance" data-fr="Méthode &amp;amp; conformité">Method &amp; compliance</h4>
+        <div class="tools" data-en="Documented technology watch&lt;br&gt;requirement specifications · GDPR" data-fr="Veille technologique documentée&lt;br&gt;cahiers des charges · RGPD">Documented technology watch<br>requirement specifications · GDPR</div>
       </div>
       <div class="skill-card">
         <h4>Communication</h4>
-        <div class="tools">Rapports &amp; slides de soutenance<br>Français · Anglais · Hindi</div>
+        <div class="tools" data-en="Reports &amp; defence slides&lt;br&gt;French · English · Hindi" data-fr="Rapports &amp;amp; slides de soutenance&lt;br&gt;Français · Anglais · Hindi">Reports &amp; defence slides<br>French · English · Hindi</div>
       </div>
     </div>
   </div>
@@ -682,22 +743,22 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="eyebrow">Prochaine étape</div>
-    <h2>Discutons de votre prochain jeu de données.</h2>
-    <p class="lede">En reconversion vers un poste d'analyste Data / BI, je cherche une équipe où cette exigence de méthode — comparer, tester, documenter — a sa place dès le premier projet.</p>
+    <div class="eyebrow" data-en="Next step" data-fr="Prochaine étape">Next step</div>
+    <h2 data-en="Let's talk about your next dataset." data-fr="Discutons de votre prochain jeu de données.">Let's talk about your next dataset.</h2>
+    <p class="lede" data-en="Retraining towards a Data / BI analyst role, I'm looking for a team where this rigour — compare, test, document — has its place from the very first project." data-fr="En reconversion vers un poste d'analyste Data / BI, je cherche une équipe où cette exigence de méthode — comparer, tester, documenter — a sa place dès le premier projet.">Retraining towards a Data / BI analyst role, I'm looking for a team where this rigour — compare, test, document — has its place from the very first project.</p>
 
     <div class="contact-row">
-      <div><span class="k">Nom</span>Hina Yadav</div>
-      <div><span class="k">Langues</span>Français · Anglais · Hindi</div>
-      <div><span class="k">Basée à</span>France</div>
-      <div><span class="k">Formation</span>Business Intelligence Analyst — OpenClassrooms</div>
+      <div><span class="k" data-en="Name" data-fr="Nom">Name</span>Hina Yadav</div>
+      <div><span class="k" data-en="Languages" data-fr="Langues">Languages</span><span data-en="French · English · Hindi" data-fr="Français · Anglais · Hindi">French · English · Hindi</span></div>
+      <div><span class="k" data-en="Based in" data-fr="Basée à">Based in</span>France</div>
+      <div><span class="k" data-en="Education" data-fr="Formation">Education</span>Business Intelligence Analyst — OpenClassrooms</div>
     </div>
   </div>
 
   <div class="wrap">
     <footer>
       <span>© 2026 Hina Yadav</span>
-      <span>Portfolio conçu avec une veille IA documentée — cf. dossier P06</span>
+      <span data-en="Portfolio built with documented AI research — see project P06" data-fr="Portfolio conçu avec une veille IA documentée — cf. projet P06">Portfolio built with documented AI research — see project P06</span>
     </footer>
   </div>
 </section>
@@ -707,6 +768,34 @@
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold:0.12 });
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  /* ---------- LANGUAGE SWITCH (FR default / EN) ---------- */
+  (function(){
+    var els = document.querySelectorAll('[data-en]');
+    els.forEach(function(el){ el.setAttribute('data-fr', el.innerHTML); });
+    var meta = document.querySelector('meta[name="description"]');
+    var FR_TITLE = document.title, FR_DESC = meta ? meta.content : '';
+    var EN_TITLE = 'Hina Yadav — Data & BI Analyst Portfolio';
+    var EN_DESC  = 'Portfolio of Hina Yadav, Business Intelligence & Data Analyst on a career change — projects, research method, skills.';
+    function setLang(lang){
+      els.forEach(function(el){ el.innerHTML = el.getAttribute(lang === 'en' ? 'data-en' : 'data-fr'); });
+      document.documentElement.lang = lang;
+      document.title = lang === 'en' ? EN_TITLE : FR_TITLE;
+      if (meta) meta.content = lang === 'en' ? EN_DESC : FR_DESC;
+      document.querySelectorAll('.lang-btn').forEach(function(b){
+        var on = b.dataset.lang === lang;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', on);
+      });
+      try { localStorage.setItem('lang', lang); } catch(e){}
+    }
+    document.querySelectorAll('.lang-btn').forEach(function(b){
+      b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+    });
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch(e){}
+    if (saved === 'en') setLang('en');
+  })();
 </script>
 
 
