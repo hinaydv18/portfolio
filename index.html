@@ -1,145 +1,220 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hina Yadav · Data / BI Analyst</title>
-<meta name="description" content="Hina Yadav, Data / BI Analyst: Python, SQL, Power BI, Excel. Portfolio / Portfolio.">
-<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27&gt;&lt;text y=%27.9em%27 font-size=%2790%27&gt;📊&lt;/text&gt;&lt;/svg&gt;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hina Yadav – Data & BI portfolio</title>
+<meta name="description" content="Five data projects with the data, method and results: SQL, Python, Power BI, Power Query.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f6f2;--surface:#fff;--ink:#14232b;--mute:#52636b;--line:#d9ded8;--teal:#0f6b6b;--gold:#e0a21b;--on-teal:#fff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1f;--surface:#16252c;--ink:#eef1ec;--mute:#9fb0b6;--line:#25383f;--teal:#5cc4bd;--gold:#f0b83a;--on-teal:#0f1a1f}}
-:root[data-theme="dark"]{--bg:#0f1a1f;--surface:#16252c;--ink:#eef1ec;--mute:#9fb0b6;--line:#25383f;--teal:#5cc4bd;--gold:#f0b83a;--on-teal:#0f1a1f}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Instrument Sans",system-ui,sans-serif}
-body[data-lang=fr] .en,body[data-lang=en] .fr{display:none}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
-a{color:var(--teal)}
-:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;gap:18px;height:58px}
-.brand{font-family:Fraunces,serif;font-weight:700;text-decoration:none;color:var(--ink);margin-right:auto}
-nav{display:flex;gap:16px;overflow-x:auto}
-nav a{color:var(--mute);text-decoration:none;font-size:15px;white-space:nowrap}
-nav a:hover{color:var(--ink)}
-.lang button{font:600 13px "Instrument Sans";border:1px solid var(--line);background:var(--surface);color:var(--mute);padding:5px 10px;cursor:pointer}
-.lang button:first-child{border-radius:8px 0 0 8px}.lang button:last-child{border-radius:0 8px 8px 0;border-left:0}
-body[data-lang=fr] #bfr,body[data-lang=en] #ben{background:var(--teal);color:var(--on-teal);border-color:var(--teal)}
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-.hero{padding:72px 0 56px}
-.hero .grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-h1{font-size:clamp(34px,5.2vw,58px);font-weight:700;letter-spacing:-.02em}
-.lead{color:var(--mute);font-size:19px;max-width:56ch;margin:20px 0 28px}
-.btn{display:inline-block;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;margin:0 10px 10px 0}
-.btn.p{background:var(--teal);color:var(--on-teal)}.btn.s{border:1.5px solid var(--teal)}
-.chart{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
-.chart svg{width:100%;height:auto;display:block}
-.chart p{margin:8px 0 0;font-size:13px;color:var(--mute)}
-.bar{fill:var(--teal);transform-origin:bottom;transform-box:fill-box;animation:grow .9s ease-out both}
-.bar.g{fill:var(--gold)}
-@keyframes grow{from{transform:scaleY(0)}}
-@media (prefers-reduced-motion:reduce){.bar{animation:none}html{scroll-behavior:auto}}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
-.stat{border-top:3px solid var(--gold);padding-top:10px}
-.stat b{font:700 30px Fraunces,serif;display:block}.stat span{color:var(--mute);font-size:14px}
-h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:10px}
-.sub{color:var(--mute);max-width:60ch;margin:0 0 30px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
-.quote{font:500 22px/1.4 Fraunces,serif;border-left:4px solid var(--gold);padding-left:18px;margin:0}
-.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
-.timeline li{padding:0 0 18px 20px;position:relative}
-.timeline li:before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--teal)}
-.timeline small{color:var(--mute);display:block}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:8px}
-.card h3{font-size:20px}.card p{margin:0;color:var(--mute);font-size:15.5px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
-.tags span{font-size:12.5px;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--mute)}
-.card.star{border-color:var(--teal)}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-.skills h3{font-size:19px;margin-bottom:8px}.skills ul{margin:0;padding-left:18px;color:var(--mute)}
-.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.paths div{border-top:3px solid var(--teal);padding-top:10px}.paths b{font-family:Fraunces,serif;font-size:19px;display:block}
-.pw{overflow:hidden}
-.paper{width:210mm;min-height:297mm;margin:0 auto;background:#fff;color:#14232b;font-size:10.5px;line-height:1.4;box-shadow:0 2px 18px rgba(0,0,0,.18);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.ph{background:#0f6b6b;color:#fff;padding:18px 24px;border-bottom:5px solid #e0a21b}
-.ph h3{font-size:30px}.ph b{display:block;font-size:12px;margin:2px 0 8px;color:#f0d28a}.ph p{margin:0 0 6px}.ph small{font-size:10px}
-.pb{display:grid;grid-template-columns:1.7fr 1fr;gap:22px;padding:16px 24px}
-.paper h4{font:600 10.5px "Instrument Sans";letter-spacing:.08em;color:#0f6b6b;margin:14px 0 6px;padding-bottom:3px;border-bottom:1px solid #d9ded8}
-.pb>div>h4:first-child{margin-top:0}
-.job{display:flex;justify-content:space-between;gap:8px;margin-top:7px;font-size:11.5px}.job i{font-style:normal;color:#52636b}
-.org{color:#0f6b6b}.paper ul{margin:3px 0 0;padding-left:14px}
-@media print{@page{size:A4;margin:0}body *{visibility:hidden}.paper,.paper *{visibility:visible}.paper{position:absolute;left:0;top:0;box-shadow:none}.pw{zoom:1!important}}
-footer{padding:36px 0;color:var(--mute);font-size:14px}
-@media (max-width:760px){.hero .grid,.two,.paths{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}nav{display:none}section{padding:52px 0}}
-
-nav a.active{color:var(--ink);font-weight:600;border-bottom:2px solid var(--gold)}
-.dl{display:flex;flex-wrap:wrap;gap:4px;margin:14px 0 28px}
-@media (max-width:760px){header .wrap{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px}nav{display:flex;order:3;width:100%}}
+:root{--bg:#eef1f5;--sf:#fff;--ink:#17202b;--mu:#566274;--ln:#d3dae3;--sql:#0b7a75;--py:#b97a00;--bi:#8b2635;--pq:#3b6e2f;--xl:#2f7d4f;--fh:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--fb:"Literata",Georgia,serif}
+@media(prefers-color-scheme:dark){:root{--bg:#12171e;--sf:#1a212b;--ink:#e8edf3;--mu:#9aa6b6;--ln:#2e3846;--sql:#3cc2ba;--py:#e8b04a;--bi:#e5707f;--pq:#7fc56e;--xl:#6fc593}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--fb)}
+h1,h2,h3,.ui{font-family:var(--fh)}a{color:inherit}
+:focus-visible{outline:3px solid var(--sql);outline-offset:2px}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;gap:18px;height:60px}
+.brand{font:800 1.15rem var(--fh);text-decoration:none;margin-right:auto}
+header a.n{font:600 .95rem var(--fh);text-decoration:none;color:var(--mu)}header a.n:hover{color:var(--ink)}
+.lg{display:flex;border:1px solid var(--ln);border-radius:6px;overflow:hidden}
+.lg button{font:600 .85rem var(--fh);background:none;color:var(--mu);border:0;padding:5px 11px;cursor:pointer}
+.lg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+h1{font:800 clamp(2.6rem,8vw,5.2rem)/.98 var(--fh);letter-spacing:-.035em;margin:56px 0 18px}
+.lead{font-size:1.2rem;max-width:34em;color:var(--mu);margin:0 0 34px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{font:600 .9rem var(--fh);border:1.5px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tbl{background:var(--sf);border:1px solid var(--ln);border-radius:10px;overflow:hidden}
+.th,.tr{display:grid;grid-template-columns:1.7fr 1.2fr 1.3fr 90px;gap:18px;padding:16px 22px 16px 26px;align-items:center}
+.th{font:600 .85rem var(--fh);color:var(--mu);border-bottom:1px solid var(--ln)}
+.tr{position:relative;text-decoration:none;border-bottom:1px solid var(--ln)}.tr:last-child{border:0}
+.tr:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--k)}
+.tr:hover{background:color-mix(in srgb,var(--k) 8%,var(--sf))}
+.tr h3{font:800 1.25rem/1.2 var(--fh);margin:0 0 3px;letter-spacing:-.01em}.tr p{margin:0;font-size:.95rem;color:var(--mu);line-height:1.45}
+.tg{display:flex;flex-wrap:wrap;gap:6px}.tag{font:600 .8rem var(--fh);padding:2px 9px;border-radius:5px;background:color-mix(in srgb,var(--k) 14%,transparent);color:var(--k)}
+.sm{font:400 .9rem/1.45 var(--fh);color:var(--mu)}
+section{margin-top:72px}h2{font:800 1.8rem var(--fh);letter-spacing:-.02em;margin:0 0 6px}
+.sub{color:var(--mu);margin:0 0 22px;max-width:40em}
+.mx{overflow-x:auto;background:var(--sf);border:1px solid var(--ln);border-radius:10px}
+.mx table{border-collapse:collapse;width:100%;min-width:640px;font-family:var(--fh)}
+.mx th,.mx td{padding:10px 14px;text-align:center;border-bottom:1px solid var(--ln);font-size:.9rem}
+.mx th{font-weight:600;color:var(--mu)}.mx td:first-child,.mx th:first-child{text-align:left;font-weight:600;color:var(--ink)}
+.mx tr:last-child td{border:0}.dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--k)}
+.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
+.ct a{color:var(--sql);font-weight:600}
+footer{margin:90px 0 40px;color:var(--mu);font:400 .9rem var(--fh)}
+.back{display:inline-block;margin:28px 0 0;font:600 .95rem var(--fh);color:var(--mu);text-decoration:none}
+.ph{border-left:8px solid var(--k);padding-left:20px;margin:26px 0 8px}.ph h1{font-size:clamp(2.1rem,6vw,3.6rem);margin:0 0 10px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;font:400 .95rem var(--fh);color:var(--mu);margin:14px 0 0}.meta b{color:var(--ink);font-weight:600}
+.pr h2{margin-bottom:14px}.pr p{max-width:40em;margin:0 0 12px}
+ol.st{list-style:none;counter-reset:s;margin:0;padding:0;max-width:44em}
+ol.st li{counter-increment:s;position:relative;padding:0 0 18px 48px;border-left:2px solid var(--ln);margin-left:15px}
+ol.st li:before{content:counter(s);position:absolute;left:-16px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--k);color:#fff;font:800 .9rem/30px var(--fh);text-align:center}
+ol.st li:last-child{border-color:transparent}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.kp div{background:var(--sf);border:1px solid var(--ln);border-top:4px solid var(--k);border-radius:8px;padding:14px 16px}
+.kp b{display:block;font:800 1.9rem/1.1 var(--fh);letter-spacing:-.02em}.kp span{font:400 .9rem/1.4 var(--fh);color:var(--mu)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.gal figure{margin:0}.gal button{display:block;width:100%;padding:0;border:1px solid var(--ln);border-radius:8px;overflow:hidden;background:var(--sf);cursor:zoom-in}
+.gal img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.gal figcaption{font:400 .88rem/1.4 var(--fh);color:var(--mu);margin-top:6px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.pg div{background:var(--sf);border:1px solid var(--ln);border-radius:8px;padding:16px 18px}.pg h3{font:800 1.1rem var(--fh);margin:0 0 4px}.pg p{margin:0 0 8px;font-size:.95rem}.pg span{font:400 .85rem/1.4 var(--fh);color:var(--mu)}
+.dl{display:inline-block;font:600 .95rem var(--fh);background:var(--ink);color:var(--bg);border-radius:8px;padding:10px 18px;text-decoration:none}
+.pn{display:flex;justify-content:space-between;gap:16px;margin-top:70px;border-top:1px solid var(--ln);padding-top:20px;font:600 1rem var(--fh)}.pn a{text-decoration:none}
+#lb{position:fixed;inset:0;background:rgba(10,14,20,.92);display:none;align-items:center;justify-content:center;z-index:9;padding:20px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:6px;background:#fff}
+@media(max-width:760px){.th{display:none}.tr{grid-template-columns:1fr;gap:8px}.cols{grid-template-columns:1fr}header a.n{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
-<body data-lang="fr">
-<header><div class="wrap">
-<a class="brand" href="index.html">Hina Yadav</a>
-<nav><a href="index.html" class="active"><span class="fr">Accueil</span><span class="en">Home</span></a><a href="projets.html"><span class="fr">Projets</span><span class="en">Projects</span></a><a href="cv.html"><span class="fr">CV</span><span class="en">CV</span></a><a href="contact.html"><span class="fr">Contact</span><span class="en">Contact</span></a></nav>
-<div class="lang"><button id="bfr" onclick="setLang('fr')">FR</button><button id="ben" onclick="setLang('en')">EN</button></div>
-</div></header>
-<main id="top">
-<section class="hero"><div class="wrap">
-<div class="grid">
-<div>
-<h1><span class="fr">Des chiffres que l'on comprend, des décisions que l'on peut prendre.</span><span class="en">Numbers people understand, decisions people can act on.</span></h1>
-<p class="lead"><span class="fr">Ancienne Sales Coordinator EMEA en reconversion vers la data, je construis des tableaux de bord Power BI pour le suivi de la performance commerciale et financière.</span><span class="en">Former Sales Coordinator EMEA moving into data, I build Power BI dashboards that track commercial and financial performance.</span></p>
-<a class="btn p" href="projets.html"><span class="fr">Voir mes projets</span><span class="en">See my projects</span></a>
-<a class="btn s" href="contact.html"><span class="fr">Me contacter</span><span class="en">Get in touch</span></a>
-</div>
-<div class="chart" aria-hidden="true">
-<svg viewBox="0 0 240 130"><line x1="10" y1="115" x2="230" y2="115" stroke="var(--line)" stroke-width="2"/>
-<rect class="bar" x="22" y="70" width="30" height="45" rx="3"/><rect class="bar" x="64" y="52" width="30" height="63" rx="3" style="animation-delay:.1s"/><rect class="bar" x="106" y="62" width="30" height="53" rx="3" style="animation-delay:.2s"/><rect class="bar" x="148" y="34" width="30" height="81" rx="3" style="animation-delay:.3s"/><rect class="bar g" x="190" y="12" width="30" height="103" rx="3" style="animation-delay:.4s"/></svg>
-<p><span class="fr">Illustration : des données brutes au tableau de bord.</span><span class="en">Illustration: from raw data to dashboard.</span></p>
-</div>
-</div>
-<div class="stats">
-<div class="stat"><b>10</b><span class="fr">projets data réalisés</span><span class="en">data projects</span></div>
-<div class="stat"><b>4</b><span class="fr">outils : Python, SQL, Power BI, Power Query</span><span class="en">tools: Python, SQL, Power BI, Power Query</span></div>
-<div class="stat"><b>3</b><span class="fr">langues : anglais, français, hindi</span><span class="en">languages: English, French, Hindi</span></div>
-<div class="stat"><b>OC</b><span class="fr">formation Business Intelligence Analyst</span><span class="en">Business Intelligence Analyst training</span></div>
-</div>
-</div></section><section id="parcours"><div class="wrap">
-<h2><span class="fr">Mon parcours</span><span class="en">My background</span></h2>
-<p class="sub"><span class="fr">Du suivi des ventes à la construction des indicateurs.</span><span class="en">From following sales to building the indicators.</span></p>
-<div class="two">
-<div>
-<p class="quote"><span class="fr">Travailler au plus près des chiffres de vente m'a donné envie de construire moi-même les rapports.</span><span class="en">Working close to sales figures made me want to build the reports myself.</span></p>
-<p><span class="fr">Après un poste de Sales Coordinator EMEA, je me forme à l'analyse de données avec OpenClassrooms : collecte conforme au RGPD, nettoyage, SQL, Excel, Power BI et Python.</span><span class="en">After working as a Sales Coordinator EMEA, I am training in data analytics with OpenClassrooms: GDPR-compliant collection, cleaning, SQL, Excel, Power BI and Python.</span></p>
-</div>
-<ul class="timeline">
-<li><b>Sales Coordinator EMEA</b><small><span class="fr">Expérience commerciale internationale</span><span class="en">International sales experience</span></small></li>
-<li><b>OpenClassrooms · Business Intelligence Analyst</b><small><span class="fr">Formation en cours : Python, SQL, Power BI, Power Query</span><span class="en">In progress: Python, SQL, Power BI, Power Query</span></small></li>
-<li><b>Data / BI Analyst</b><small><span class="fr">Objectif : un poste de Data Analyst junior</span><span class="en">Goal: a junior Data Analyst role</span></small></li>
-</ul>
-</div>
-</div></section><section id="cap"><div class="wrap">
-<h2><span class="fr">Où je vais</span><span class="en">Where I'm heading</span></h2>
-<p class="sub"><span class="fr">Un cap clair, ouvert à l'international.</span><span class="en">A clear direction, open to international roles.</span></p>
-<div class="paths">
-<div><b><span class="fr">Aujourd'hui</span><span class="en">Now</span></b><span class="fr">Data / BI Analyst junior : rendre la donnée lisible pour ceux qui décident.</span><span class="en">Junior Data / BI Analyst: making data readable for decision-makers.</span></div>
-<div><b><span class="fr">Demain</span><span class="en">Next</span></b><span class="fr">Gagner en expérience réelle sur des projets data et des tableaux de bord de production.</span><span class="en">Gain real-world experience on data projects and production dashboards.</span></div>
-<div><b><span class="fr">À terme</span><span class="en">Long term</span></b><span class="fr">Missions à fort impact, y compris à l'étranger.</span><span class="en">High-impact missions, including abroad.</span></div>
-</div>
-</div></section>
-</main>
-<footer><div class="wrap">© 2026 Hina Yadav · Data / BI Analyst · France</div></footer>
-<script>function setLang(l){document.body.dataset.lang=l;document.documentElement.lang=l;try{localStorage.setItem('lang',l)}catch(e){}}
-var s=null;try{s=localStorage.getItem('lang')}catch(e){}
-setLang(s||((navigator.language||'fr').slice(0,2)==='en'?'en':'fr'));
-function fit(){var w=document.getElementById("pw");if(w){w.style.zoom=Math.min(1,w.clientWidth/794)}}
-addEventListener("resize",fit);addEventListener("load",fit);
+<body>
+<header><div class="w"><a class="brand" href="#/">Hina Yadav</a><a class="n" href="#/" data-go="projects" id="n1"></a><a class="n" href="#/" data-go="skills" id="n2"></a><a class="n" href="#/" data-go="about" id="n3"></a>
+<div class="lg" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="fr">FR</button></div></div></header>
+<main class="w" id="app"></main>
+<div id="lb" role="dialog" aria-label="Image"><img alt=""></div>
+<script>
+/* ===== EDIT HERE: contact links (leave "" to hide) ===== */
+const CONTACT={email:"hinaydv18@gmail.com",linkedin:"",github:""};
+/* ======================================================= */
+const o=(en,fr)=>({en,fr});
+const UI={projects:o("Projects","Projets"),skills:o("Skills","Compétences"),about:o("About","À propos"),
+ h1:o("Hina Yadav","Hina Yadav"),
+ lead:o("Business intelligence analyst in training. Six projects, each with the data I worked on, the method I followed and what came out of it.","Analyste Business Intelligence en formation. Six projets, chacun avec les données utilisées, la méthode suivie et les résultats obtenus."),
+ all:o("All","Tous"),c1:o("Project","Projet"),c2:o("Tools","Outils"),c3:o("Data","Données"),c4:o("Date","Date"),
+ skT:o("Skills used in each project","Compétences par projet"),skS:o("Each dot is a skill I used in that project.","Chaque point indique une compétence utilisée dans le projet."),
+ abT:o("About","À propos"),
+ ab:o("I moved from sales coordination (EMEA) into data analytics. I am finishing the OpenClassrooms Business Intelligence Analyst programme, where I learned SQL, Python, Power BI and Power Query by working on realistic business cases.","Je suis passée de la coordination commerciale (EMEA) à l’analyse de données. Je termine la formation Analyste Business Intelligence d’OpenClassrooms, où j’ai appris SQL, Python, Power BI et Power Query sur des cas d’entreprise réalistes."),
+ lang:o("Languages: English, French, Hindi.","Langues : anglais, français, hindi."),
+ back:o("← All projects","← Tous les projets"),q:o("The question","La question"),m:o("Method","Méthode"),r:o("Results","Résultats"),
+ g:o("Slides and outputs (click to enlarge)","Diapositives et résultats (cliquer pour agrandir)"),
+ pgT:o("Dashboard pages","Pages du tableau de bord"),dl:o("Download the source file","Télécharger le fichier source"),
+ next:o("Next project →","Projet suivant →"),prev:o("← Previous project","← Projet précédent"),
+ note:o("Training project on a fictional company.","Projet de formation sur une entreprise fictive.")};
+const SK=[["SQL",["ins","crm","csat"],"sql"],["Data modelling · schema",["ins","csat"],"sql"],["Python · Pandas",["bn"],"py"],["Statistics · outliers",["bn"],"py"],["Power Query",["crm"],"pq"],["GDPR · anonymisation",["crm"],"pq"],["Power BI · DAX measures",["bi"],"bi"],["Excel · pivot tables · charts",["nba","bn"],"xl"]];
+const P=[
+{id:"nba",k:"xl",d:"2025-10",tools:["Excel"],file:"nba-excel.pptx",
+ t:o("NBA season analysis","Analyse de la saison NBA"),
+ s:o("Pivot tables and charts on 2024/25 player statistics.","Tableaux croisés dynamiques et graphiques sur les statistiques 2024/25."),
+ data:o("NBA player statistics, 2024/25","Statistiques des joueurs NBA, 2024/25"),
+ q:o("Which teams and players stood out in the 2024/25 season, and what did the best scorers do differently?","Quelles équipes et quels joueurs se sont distingués en 2024/25, et qu’ont fait de différent les meilleurs marqueurs ?"),
+ m:[o("Ranked the 30 teams by total points with a pivot table (players per team, sum of points).","Classement des 30 équipes par points totaux avec un tableau croisé dynamique (joueurs par équipe, somme des points)."),
+    o("Compared the two top teams, Detroit Pistons and San Antonio Spurs: rebounds, assists, steals, blocks and player impact.","Comparaison des deux meilleures équipes, Detroit Pistons et San Antonio Spurs : rebonds, passes décisives, interceptions, contres et impact du joueur."),
+    o("Analysed the top 15 scorers: field-goal %, three-point %, free-throw % and offensive rebounds.","Analyse des 15 meilleurs marqueurs : % de tirs réussis, % à 3 points, % aux lancers francs et rebonds offensifs."),
+    o("Built stacked and clustered bar charts to show each comparison.","Création de graphiques en barres empilées et groupées pour illustrer chaque comparaison.")],
+ kp:[["10,292",o("points for the top team, Detroit Pistons","points de la meilleure équipe, Detroit Pistons")],["2,485",o("points for the top scorer, Shai Gilgeous-Alexander (51.9% shooting)","points du meilleur marqueur, Shai Gilgeous-Alexander (51,9 % de réussite)")],["30",o("teams compared","équipes comparées")]],
+ im:[o("Top teams by points (pivot table)","Meilleures équipes par points (tableau croisé)"),o("Rebounds, assists and steals: Pistons and Spurs","Rebonds, passes et interceptions : Pistons et Spurs"),o("Top scorers: points and shooting %","Meilleurs marqueurs : points et % de tirs"),o("Top scorers: three-point and free-throw %","Meilleurs marqueurs : % à 3 points et lancers francs"),o("Impact of players on both teams","Impact des joueurs des deux équipes")]},
+{id:"ins",k:"sql",d:"2025-11",tools:["SQL","SQLite"],file:"insurance-sql.pptx",
+ t:o("Home insurance contracts","Contrats d’assurance habitation"),
+ s:o("Questions answered with SQL on a two-table database.","Questions résolues en SQL sur une base de deux tables."),
+ data:o("Contracts and regions tables","Tables contrats et régions"),
+ q:o("A home insurance company wants answers from its contract data: how many contracts per commune and per region, by housing type and contract formula. The job was to design the database and write the queries.","Une compagnie d’assurance habitation veut exploiter ses contrats : nombre de contrats par commune et par région, selon le type de logement et la formule. Le travail consiste à concevoir la base et écrire les requêtes."),
+ m:[o("Read the data dictionary: contract ID, address, housing type, surface, occupancy, contract type, declared value, monthly premium.","Lecture du dictionnaire des données : numéro de contrat, adresse, type de logement, surface, occupation, type de contrat, valeur déclarée, prime mensuelle."),
+    o("Drew the relational schema in SQL Power Architect and linked contracts to regions through the department code.","Schéma relationnel dessiné dans SQL Power Architect, contrats reliés aux régions par le code département."),
+    o("Loaded both tables into SQLite with DB Browser and checked the structure.","Chargement des deux tables dans SQLite avec DB Browser et vérification de la structure."),
+    o("Wrote the queries with SELECT, WHERE, JOIN … ON, GROUP BY, HAVING and ORDER BY, and checked each result.","Rédaction des requêtes avec SELECT, WHERE, JOIN … ON, GROUP BY, HAVING et ORDER BY, puis vérification des résultats.")],
+ kp:[["2",o("tables joined","tables jointes")],["7",o("SQL clauses used","clauses SQL utilisées")],["1",o("relational schema designed","schéma relationnel conçu")]],
+ im:[o("Data dictionary","Dictionnaire des données"),o("Relational schema","Schéma relationnel"),o("Database structure in DB Browser","Structure de la base dans DB Browser"),o("Queries and results","Requêtes et résultats"),o("Queries and results","Requêtes et résultats"),o("Queries and results","Requêtes et résultats")]},
+{id:"crm",k:"pq",d:"2025-11",tools:["SQL","Power Query","GDPR"],file:"crm-gdpr.pptx",
+ t:o("GDPR-compliant customer data","Données clients conformes au RGPD"),
+ s:o("Extract, clean and anonymise a CRM export.","Extraire, nettoyer et anonymiser un export CRM."),
+ data:o("CRM client base, 2022 files","Base clients CRM, dossiers 2022"),
+ q:o("After a data-protection sanction, a company must share customer data without exposing personal information. Which rules apply, and what can be kept?","Après une sanction sur la protection des données, une entreprise doit partager ses données clients sans exposer d’informations personnelles. Quelles règles s’appliquent et que peut-on conserver ?"),
+ m:[o("Wrote GDPR recommendations: purpose, data minimisation, protection of sensitive data, limited retention, security and access by team, transparency.","Rédaction des recommandations RGPD : finalité, minimisation, protection des données sensibles, conservation limitée, sécurité et accès par équipe, transparence."),
+    o("Extracted the 2022 requests with SQLite, using strftime on the request date. The query returned 1,344 rows.","Extraction des demandes 2022 avec SQLite, via strftime sur la date de demande. La requête renvoie 1 344 lignes."),
+    o("Kept only complete files and prepared the data in Power Query.","Conservation des dossiers complets et préparation des données dans Power Query."),
+    o("Removed or transformed personal fields so individuals can no longer be identified, then documented the result in a data dictionary.","Suppression ou transformation des champs personnels pour empêcher l’identification, puis documentation dans un dictionnaire des données.")],
+ kp:[["6",o("GDPR principles written as rules","principes RGPD formulés en règles")],["1 344",o("rows extracted for 2022","lignes extraites pour 2022")],["2",o("tools: SQLite and Power Query","outils : SQLite et Power Query")]],
+ im:[o("Data dictionary","Dictionnaire des données"),o("Preparation in Power Query","Préparation dans Power Query"),o("Transformation steps","Étapes de transformation"),o("Result after anonymisation","Résultat après anonymisation"),o("Result (continued)","Résultat (suite)"),o("Result (continued)","Résultat (suite)")],
+ sn:o("Slides showing raw rows with personal fields are left out on purpose.","Les diapositives montrant des lignes brutes avec données personnelles sont volontairement exclues.")},
+{id:"csat",k:"sql",d:"2025-12",tools:["SQL","PostgreSQL"],file:"customer-satisfaction-sql.pptx",
+ t:o("Customer satisfaction at BestMarket","Satisfaction client chez BestMarket"),
+ s:o("Net Promoter Score and feedback analysed with PostgreSQL.","NPS et retours clients analysés avec PostgreSQL."),
+ data:o("Customer feedback database, 3 tables","Base de retours clients, 3 tables"),
+ q:o("A retail chain collects customer feedback from several sources, including social media, email and phone. Management wants to know which stores, products and channels give the best customer experience.","Une enseigne de grande distribution collecte des retours clients de plusieurs sources, dont les réseaux sociaux, l’email et le téléphone. La direction veut savoir quels magasins, produits et canaux offrent la meilleure expérience client."),
+ m:[o("Loaded customer_data_feedback.sql into PostgreSQL.","Chargement de customer_data_feedback.sql dans PostgreSQL."),
+    o("Updated the schema and the data dictionary, and added the ref_magasin table (stores, departments, population).","Mise à jour du schéma et du dictionnaire, et ajout de la table ref_magasin (magasins, départements, population)."),
+    o("Wrote the queries: average ratings by product category, store and department, best weekday, quarterly progress, NPS by source.","Rédaction des requêtes : notes moyennes par catégorie, magasin et département, meilleur jour, évolution trimestrielle, NPS par source."),
+    o("Ran consistency checks on the data and reported the issues found.","Contrôles de cohérence des données et signalement des anomalies.")],
+ kp:[["3",o("tables (product, feedback, stores)","tables (produit, retours, magasins)")],["15+",o("business questions answered","questions métier traitées")],["3",o("feedback sources compared (social media, email, phone)","sources de retour comparées (réseaux sociaux, email, téléphone)")]],
+ im:[o("Database schema","Schéma de la base"),o("Data dictionary","Dictionnaire des données"),o("Tables in PostgreSQL","Tables dans PostgreSQL"),o("SQL queries and results","Requêtes SQL et résultats"),o("SQL queries and results","Requêtes SQL et résultats"),o("SQL queries and results","Requêtes SQL et résultats"),o("SQL queries and results","Requêtes SQL et résultats"),o("SQL queries and results","Requêtes SQL et résultats"),o("Data consistency checks","Contrôles de cohérence")]},
+{id:"bn",k:"py",d:"2026-04",tools:["Python","Pandas","Plotly","Excel"],file:"bottleneck-notebook.ipynb",
+ t:o("BottleNeck: stock and sales analysis","BottleNeck : analyse des stocks et des ventes"),
+ s:o("Three files merged and analysed in a Jupyter notebook.","Trois fichiers fusionnés et analysés dans un notebook Jupyter."),
+ data:o("ERP, web and link files (.xlsx)","Fichiers ERP, web et liaison (.xlsx)"),
+ q:o("BottleNeck sells wines and spirits online. Which products make the revenue, how much stock is sitting on shelves, and where are the margins?","BottleNeck vend du vin et des spiritueux en ligne. Quels produits font le chiffre d’affaires, quel stock dort en rayon et où sont les marges ?"),
+ m:[o("Explored each file: 825 ERP products, 1,513 web rows, and a link file. Fixed negative prices and quantities, and a stock status that contradicted the quantity.","Exploration de chaque fichier : 825 produits ERP, 1 513 lignes web et un fichier de liaison. Correction des prix et quantités négatifs et d’un statut de stock contredisant la quantité."),
+    o("Removed empty and duplicate web rows, then merged the three files. 714 products matched.","Suppression des lignes web vides et en double, puis fusion des trois fichiers. 714 produits correspondent."),
+    o("Found price outliers with the z-score and the interquartile range: 31 products, 4.34% of the catalogue.","Détection des prix aberrants par z-score et intervalle interquartile : 31 produits, 4,34 % du catalogue."),
+    o("Calculated revenue, stock value, stock turnover and margin rate, checked correlations, and exported the clean table to Excel.","Calcul du CA, de la valeur du stock, de la rotation et du taux de marge, étude des corrélations, export de la table propre vers Excel.")],
+ kp:[["143,680 €",o("web revenue","CA du site web")],["494,682 €",o("stock value (16,741 units)","valeur du stock (16 741 unités)")],["434 / 714",o("products needed for 80% of revenue (61%)","produits pour 80 % du CA (61 %)")],["45%",o("average margin on cognac and whisky (champagne: 28%)","marge moyenne sur le cognac et le whisky (champagne : 28 %)")]],
+ ins:o("Revenue is spread out: it takes 61% of the catalogue to reach 80% of revenue, not the usual 20%. Price and sales are moderately negatively correlated (-0.52).","Le CA est réparti : il faut 61 % du catalogue pour atteindre 80 % du CA, et non les 20 % habituels. Prix et ventes sont modérément corrélés négativement (-0,52)."),
+ im:[o("Price distribution (boxplot)","Répartition des prix (boîte à moustaches)"),o("Correlations between stock, sales and price","Corrélations entre stock, ventes et prix")]},
+{id:"bi",k:"bi",d:"2026-07",tools:["Power BI","DAX"],file:"beverage-dashboard.pbix",
+ t:o("Beverage business dashboard","Tableau de bord d’une activité boissons"),
+ s:o("Five Power BI pages from sales to business recommendations.","Cinq pages Power BI, des ventes aux recommandations."),
+ data:o("Sales, stock, purchase prices and promotions","Ventes, stock, prix d’achat et promotions"),
+ q:o("Managers of a wine, spirits and soft-drinks business need one report for sales, stock, margin and promotions, ending with actions they can take.","Les responsables d’une activité vins, spiritueux et boissons sans alcool veulent un rapport unique sur les ventes, le stock, la marge et les promotions, avec des actions concrètes."),
+ m:[o("Built the data model and the measures: revenue, margin %, stock turnover, days of stock, promotion cost and ROI, purchase-price variation.","Construction du modèle de données et des mesures : CA, marge %, rotation, jours de stock, coût et ROI des promotions, variation du prix d’achat."),
+    o("Designed five linked pages with shared filters (year, month, product type) and page navigation.","Conception de cinq pages liées avec filtres communs (année, mois, type de produit) et navigation."),
+    o("Read the numbers at product level, not only on averages, to find what the global figures hide.","Lecture des chiffres au niveau produit, et non seulement des moyennes, pour trouver ce que les chiffres globaux masquent."),
+    o("Wrote three recommendations, each with an action.","Rédaction de trois recommandations, chacune avec une action.")],
+ kp:[["5",o("report pages","pages de rapport")],["+25 to +50%",o("purchase-price rise on 5 products in February, hidden by a +1% average","hausse du prix d’achat de 5 produits en février, masquée par une moyenne de +1 %")],["≈ 0%",o("return on investment of most promotions","ROI de la plupart des promotions")]],
+ pg:[[o("Sales and products","Ventes et produits"),o("Revenue and quantities sold over time, by product type and by SKU.","CA et quantités vendues dans le temps, par type de produit et par référence."),"Line, column, donut and bar charts"],
+     [o("Stock and margin","Stock et marge"),o("Margin %, stock turnover and days of stock per product, with a status table.","Marge %, rotation et jours de stock par produit, avec un tableau de statut."),"Combo chart, table"],
+     [o("Overview","Vue d’ensemble"),o("The essential indicators on one page: revenue, margin, turnover, purchase price.","Les indicateurs essentiels sur une page : CA, marge, rotation, prix d’achat."),"KPI cards, margin status table"],
+     [o("Promotions","Promotions"),o("Promotion period revenue, promotion cost and ROI by product and month.","CA de la période promo, coût et ROI par produit et par mois."),"Combo chart, matrix"],
+     [o("Recommendations","Recommandations"),o("1. Renegotiate with suppliers whose prices jumped. 2. Redesign promotions to target high-margin products. 3. Reduce dormant stock and reorder fast sellers.","1. Renégocier avec les fournisseurs dont les prix ont bondi. 2. Revoir les promotions pour cibler les produits à forte marge. 3. Réduire le stock dormant et réapprovisionner les produits à rotation rapide."),"Price variation table, ROI and stock charts"]],
+ im:[]}];
+let lang=(()=>{try{return localStorage.getItem("hl")||(navigator.language||"en").slice(0,2)}catch(e){return "en"}})();if(lang!="fr")lang="en";
+let flt="all";const $=s=>document.querySelector(s),T=x=>x[lang],A=$("#app");
+const mon=d=>new Date(d+"-01").toLocaleDateString(lang,{month:"short",year:"numeric"});
+const col=k=>`style="--k:var(--${k})"`;
+const tc=t=>({SQL:"sql",SQLite:"sql",PostgreSQL:"sql",Python:"py",Pandas:"py",Plotly:"py","Power BI":"bi",DAX:"bi","Power Query":"pq",GDPR:"pq",Excel:"xl"}[t]||"sql");
+const tags=p=>`<div class="tg">${p.tools.map(t=>`<span class="tag" ${col(tc(t))}>${t}</span>`).join("")}</div>`;
+const FL=["SQL","Python","Power BI","Power Query","Excel"];
+function home(){
+ const list=P.filter(p=>flt=="all"||p.tools.includes(flt));
+ A.innerHTML=`<h1>${T(UI.h1)}</h1><p class="lead">${T(UI.lead)}</p>
+ <section id="projects" style="margin-top:0"><div class="chips" role="group">${["all",...FL].map(f=>`<button class="chip" data-f="${f}" aria-pressed="${flt==f}">${f=="all"?T(UI.all):f}</button>`).join("")}</div>
+ <div class="tbl"><div class="th" aria-hidden="true"><span>${T(UI.c1)}</span><span>${T(UI.c2)}</span><span>${T(UI.c3)}</span><span>${T(UI.c4)}</span></div>
+ ${list.map(p=>`<a class="tr" href="#/p/${p.id}" ${col(p.k)}><div><h3>${T(p.t)}</h3><p>${T(p.s)}</p></div>${tags(p)}<span class="sm">${T(p.data)}</span><span class="sm">${mon(p.d)}</span></a>`).join("")}</div></section>
+ <section id="skills"><h2>${T(UI.skT)}</h2><p class="sub">${T(UI.skS)}</p><div class="mx"><table><thead><tr><th></th>${P.map(p=>`<th>${T(p.t).split(/[:,]| at /)[0]}</th>`).join("")}</tr></thead><tbody>
+ ${SK.map(r=>`<tr><td>${r[0]}</td>${P.map(p=>`<td>${r[1].includes(p.id)?`<span class="dot" ${col(r[2])} role="img" aria-label="yes"></span>`:""}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>
+ <section id="about" class="cols"><div><h2>${T(UI.abT)}</h2><p>${T(UI.ab)}</p><p>${T(UI.lang)}</p></div>
+ <div class="ct"><h2>Contact</h2><p><a href="mailto:${CONTACT.email}">${CONTACT.email}</a>${CONTACT.linkedin?`<br><a href="${CONTACT.linkedin}">LinkedIn</a>`:""}${CONTACT.github?`<br><a href="${CONTACT.github}">GitHub</a>`:""}</p></div></section>`;
+}
+function proj(id){
+ const i=P.findIndex(p=>p.id==id),p=P[i];if(!p)return home();
+ const nx=P[(i+1)%P.length],pv=P[(i+P.length-1)%P.length],b=`assets/${id}/`;
+ A.innerHTML=`<a class="back" href="#/">${T(UI.back)}</a>
+ <div class="ph" ${col(p.k)}><h1>${T(p.t)}</h1>${tags(p)}<div class="meta"><span><b>${T(UI.c3)}:</b> ${T(p.data)}</span><span><b>${T(UI.c4)}:</b> ${mon(p.d)}</span><span>${T(UI.note)}</span></div></div>
+ <section class="pr" ${col(p.k)}><h2>${T(UI.q)}</h2><p>${T(p.q)}</p></section>
+ <section class="pr" ${col(p.k)}><h2>${T(UI.m)}</h2><ol class="st">${p.m.map(x=>`<li>${T(x)}</li>`).join("")}</ol></section>
+ <section class="pr" ${col(p.k)}><h2>${T(UI.r)}</h2><div class="kp">${p.kp.map(k=>`<div><b>${k[0]}</b><span>${T(k[1])}</span></div>`).join("")}</div>${p.ins?`<p style="margin-top:16px">${T(p.ins)}</p>`:""}</section>
+ ${p.pg?`<section class="pr" ${col(p.k)}><h2>${T(UI.pgT)}</h2><div class="pg">${p.pg.map(g=>`<div><h3>${T(g[0])}</h3><p>${T(g[1])}</p><span>${g[2]}</span></div>`).join("")}</div></section>`:""}
+ ${p.im.length?`<section class="pr"><h2>${T(UI.g)}</h2><div class="gal">${p.im.map((c,j)=>{const f=b+(j+1)+(id=="bn"?".png":".jpg");return `<figure><button data-z="${f}" aria-label="${T(c)}"><img src="${f}" alt="${T(c)}" loading="lazy"></button><figcaption>${T(c)}</figcaption></figure>`}).join("")}</div>${p.sn?`<p class="sm" style="margin-top:12px">${T(p.sn)}</p>`:""}</section>`:""}
+ <section><a class="dl" href="files/${p.file}" download>${T(UI.dl)} (${p.file.split(".").pop()})</a></section>
+ <nav class="pn"><a href="#/p/${pv.id}">${T(UI.prev)}</a><a href="#/p/${nx.id}">${T(UI.next)}</a></nav>`;
+}
+function go(){const m=location.hash.match(/^#\/p\/(\w+)/);document.documentElement.lang=lang;
+ ["n1","n2","n3"].forEach((x,j)=>$("#"+x).textContent=T([UI.projects,UI.skills,UI.about][j]));
+ document.querySelectorAll(".lg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l==lang));
+ m?proj(m[1]):home();}
+addEventListener("hashchange",()=>{go();if(location.hash.startsWith("#/p/"))scrollTo(0,0)});
+document.addEventListener("click",e=>{const t=e.target.closest("[data-l],[data-f],[data-z],[data-go]");
+ if(!t&&e.target.closest("#lb")){$("#lb").classList.remove("on");return}
+ if(!t)return;
+ if(t.dataset.l){lang=t.dataset.l;try{localStorage.setItem("hl",lang)}catch(x){}go()}
+ else if(t.dataset.f){flt=t.dataset.f;home()}
+ else if(t.dataset.z){const l=$("#lb");l.querySelector("img").src=t.dataset.z;l.classList.add("on")}
+ else if(t.dataset.go){e.preventDefault();const id=t.dataset.go;const sc=()=>{const el=document.getElementById(id);el&&el.scrollIntoView()};if(location.hash!="#/"&&location.hash!=""){location.hash="#/";setTimeout(sc,50)}else sc()}});
+addEventListener("keydown",e=>{if(e.key=="Escape")$("#lb").classList.remove("on")});
+go();
 </script>
 </body>
 </html>
