@@ -32,7 +32,8 @@ h1{font:800 clamp(2.4rem,6.5vw,4.6rem)/1.02 var(--fh);letter-spacing:-.035em;mar
 .kicker{font:600 .8rem var(--fh);letter-spacing:.14em;text-transform:uppercase;color:var(--sql);margin:0 0 14px}
 .lead{font-size:1.2rem;max-width:36em;color:var(--mu);margin:0 0 30px}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:0 0 12px}
-.kpis div{background:var(--sf);border:1px solid var(--ln);border-top:4px solid var(--sql);border-radius:8px;padding:14px 16px}
+.kpis>*{background:var(--sf);border:1px solid var(--ln);border-top:4px solid var(--sql);border-radius:8px;padding:14px 16px;text-decoration:none;color:inherit}
+.kpis>*:hover{border-color:var(--sql)}
 .kpis b{display:block;font:800 1.9rem/1.1 var(--fh);letter-spacing:-.02em}.kpis span{font:400 .9rem/1.4 var(--fh);color:var(--mu)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
 .chip{font:600 .9rem var(--fh);border:1.5px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer}
@@ -96,6 +97,7 @@ ol.st li:last-child{border-color:transparent}
 .cards>div p{margin:0;font-size:.95rem;color:var(--mu)}
 .cert{background:var(--sf);border:1px solid var(--ln);border-left:6px solid var(--py);border-radius:10px;padding:22px 24px;margin-top:14px;max-width:46em}
 .cert h3{font-size:1.3rem}
+.certimg{display:block;width:min(420px,100%);border:1px solid var(--ln);border-radius:8px;margin:18px 0 2px}
 .cert .per{font:600 .82rem var(--fh);color:var(--py);letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:4px}
 .cert p{margin:0 0 10px;color:var(--mu)}
 .cert ul{margin:0;padding-left:20px;color:var(--mu)}.cert li{margin:4px 0;font-size:.97rem}
@@ -120,8 +122,8 @@ const CONTACT={email:"hinaydv18@gmail.com",phone:"+33 6 67 84 45 60",linkedin:"h
 const o=(en,fr)=>({en,fr});
 const NAV=[o("Home","Accueil"),o("Journey","Mon parcours"),o("Projects","Projets"),o("Skills","Compétences"),o("Hobbies","Hobbies"),o("CV","CV"),o("Contact","Contact")];
 const UI={
- lead:o("Eight years coordinating EMEA sales and analysing commercial performance taught me to understand a business need. The OpenClassrooms Business Intelligence programme taught me the tools. Now I turn business questions into clear, usable analysis.","Huit ans de coordination commerciale EMEA et d’analyse de performance m’ont appris à comprendre un besoin métier. La formation Business Intelligence d’OpenClassrooms m’a appris les outils. Aujourd’hui, je transforme les questions métier en analyses claires et utilisables."),
- h1:o("From sales coordination to dashboards: numbers a decision-maker can use.","De la coordination commerciale aux tableaux de bord : des chiffres que le décideur peut utiliser."),
+ lead:o("Eight years analysing sales and commercial performance for EMEA teams, then a state-recognised Data Analyst certification (RNCP 6). I speak both languages: the business that asks the question, and the data that answers it.","Huit ans à analyser les ventes et la performance commerciale pour des équipes EMEA, puis une certification Data Analyst reconnue par l’État (RNCP 6). Je parle les deux langues : celle du métier qui pose la question, et celle de la donnée qui y répond."),
+ h1:o("I turn business questions into clear answers — and dashboards people can act on.","Je transforme les questions métier en réponses claires — et en tableaux de bord sur lesquels agir."),
  k1:[["8+","<span class='x'></span>"],0],
  c1:o("Project","Projet"),c2:o("Tools","Outils"),c3:o("Data","Données"),c4:o("Date","Date"),all:o("All","Tous"),
  skT:o("Skills used in each project","Compétences par projet"),skS:o("Each dot is a skill used in that project.","Chaque point indique une compétence utilisée dans le projet."),
@@ -169,10 +171,10 @@ const LANGS=[[o("French — Fluent (C1)","Français — Courant (C1)"),o("Bachel
  [o("Hindi — Native (C2)","Hindi — Langue maternelle (C2)"),o("Native language","Langue maternelle")]];
 /* Hobbies */
 const HB=[
- [o("HYROX & running","HYROX et course à pied"),o("Fitness racing combines running and functional workouts. Training for it is a lesson in consistency and measurable progress — the same mindset I bring to long projects.","Le HYROX associe course à pied et exercices fonctionnels. s’y préparer apprend la régularité et la progression mesurable — l’état d’esprit que j’applique aux projets longs.")],
- [o("Meditation & neuroscience","Méditation et neurosciences"),o("A daily practice, and a curiosity about what the science says about attention, learning and decision-making.","Une pratique quotidienne, et une curiosité pour ce que la science dit de l’attention, de l’apprentissage et de la prise de décision.")],
- [o("Travel & cultural discovery","Voyages et découverte culturelle"),o("India, France and across Europe — living between three languages and cultures shapes how I read people and data.","Inde, France et toute l’Europe — vivre entre trois langues et cultures façonne ma lecture des personnes comme des données.")],
- [o("Reading","Lecture"),o("Mostly non-fiction: business, psychology and data books that challenge how I think.","Essentiellement des essais : business, psychologie et ouvrages sur la donnée qui bousculent ma façon de penser.")]];
+ [o("HYROX & running","HYROX et course à pied"),o("Fitness racing combines running and functional workouts. Training for it is a lesson in discipline and measurable progress — the same mindset I bring to long projects.","Le HYROX associe course à pied et exercices fonctionnels. S’y préparer, c’est apprendre la discipline et la progression mesurable — l’état d’esprit que j’applique aux projets longs.")],
+ [o("Meditation & neuroscience","Méditation et neurosciences"),o("A daily practice, and a curiosity about the science of attention, learning and decision-making.","Une pratique quotidienne, et une curiosité pour la science de l’attention, de l’apprentissage et de la décision.")],
+ [o("Travel & cultural discovery","Voyages et découverte culturelle"),o("India, France and the rest of Europe — living between three languages and cultures shapes how I read people, and data.","Inde, France et Europe — vivre entre trois langues et cultures façonne ma lecture des personnes comme des données.")],
+ [o("Reading","Lecture"),o("Mostly non-fiction — business, psychology, data. I read to have my assumptions challenged.","Essentiellement des essais — business, psychologie, donnée. Je lis pour bousculer mes certitudes.")]];
 const SK=[["SQL",["ins","crm","csat"],"sql"],["Data modelling · schema",["ins","csat"],"sql"],["Python · Pandas",["bn"],"py"],["Statistics · outliers",["bn"],"py"],["Power Query",["crm"],"pq"],["GDPR · anonymisation",["crm"],"pq"],["Power BI · DAX measures",["bi"],"bi"],["Excel · pivot tables · charts",["nba","bn"],"xl"]];
 const P=[
 {id:"nba",k:"xl",d:"2025-10",tools:["Excel"],file:"nba-excel.pptx",
@@ -259,7 +261,7 @@ const foot=()=>`<footer><span>© 2026 Hina Yadav · Data & BI Analyst · Paris</
 function home(){
  A.innerHTML=`<p class="kicker">${T(o("Data & BI Analyst · Portfolio","Data & BI Analyst · Portfolio"))}</p>
  <h1>${T(UI.h1)}</h1><p class="lead">${T(UI.lead)}</p>
- <div class="kpis">${KPI.map(k=>`<div><b>${T(k[0])}</b><span>${T(k[1])}</span></div>`).join("")}</div>
+ <div class="kpis">${KPI.map((k,i)=>{const inner=`<b>${T(k[0])}</b><span>${T(k[1])}</span>`;return i==2?`<a href="#/parcours" title="${T(o("See the certification","Voir la certification"))}">${inner}</a>`:`<div>${inner}</div>`}).join("")}</div>
  <section style="margin-top:64px"><h2>${T(o("Six projects, from question to recommendation","Six projets, de la question à la recommandation"))}</h2>
  <p class="sub">${T(o("Each with the data used, the method followed and the results obtained. Click any project for the full story.","Chacun avec les données utilisées, la méthode suivie et les résultats obtenus. Cliquez sur un projet pour le détail."))}</p>
  ${projTable()}</section>
@@ -284,11 +286,11 @@ function projets(){
 function parcours(){
  A.innerHTML=`<p class="kicker">${T(o("Who I am","Qui je suis"))}</p>
  <h1>${T(o("My journey","Mon parcours"))}</h1>
- <p class="lead">${T(o("From Delhi to Paris, from the shop floor to EMEA sales coordination, and now into data. The common thread: understand the need, then answer it with clarity.","De Delhi à Paris, du magasin à la coordination commerciale EMEA, puis vers la donnée. Le fil conducteur : comprendre le besoin, puis y répondre avec clarté."))}</p>
+ <p class="lead">${T(o("Eight years in commercial roles — client consulting in Paris, EMEA sales coordination between Paris and Stockholm — always close to the business and its numbers. In 2025 I decided to go deeper and master the data behind them. This is that journey.","Huit ans dans des rôles commerciaux — conseil clientèle à Paris, coordination des ventes EMEA entre Paris et Stockholm — toujours au plus près du métier et de ses chiffres. En 2025, j’ai choisi d’aller plus loin et de maîtriser la donnée qui les produit. Voici ce parcours."))}</p>
  <section style="margin-top:24px"><h2>${T(o("Experience & education","Expérience & formation"))}</h2>
  <ol class="tl">${XP.map(x=>`<li class="${x.edu?"edu":""}"><span class="per">${x.per}</span><h3>${T(x.role)}</h3><p class="org">${T(x.org)}</p><p>${T(x.txt)}</p></li>`).join("")}</ol></section>
  <section><h2>${T(o("Certification","Certification"))}</h2>
- <div class="cert"><span class="per">${T(CERT.per)}</span><h3>${T(CERT.t)}</h3><p>${T(CERT.d)}</p><ul>${CERT.pts.map(p=>`<li>${T(p)}</li>`).join("")}</ul><p style="margin-top:16px"><a class="dl" href="files/certification-data-analyst.pdf" download>${T(o("View the certificate (PDF)","Voir la certification (PDF)"))}</a></p><p class="sm" style="margin-top:8px">${T(o("Certificate ID: OC-2026-09-1njx3lrh2p49","Identifiant : OC-2026-09-1njx3lrh2p49"))}</p></div></section>
+ <div class="cert"><span class="per">${T(CERT.per)}</span><h3>${T(CERT.t)}</h3><p>${T(CERT.d)}</p><ul>${CERT.pts.map(p=>`<li>${T(p)}</li>`).join("")}</ul><a href="files/certification-data-analyst.pdf" target="_blank" rel="noopener"><img class="certimg" src="certification-data-analyst.jpg" alt="${T(o("OpenClassrooms Data Analyst certificate","Certificat OpenClassrooms Data Analyst"))}" loading="lazy"></a><p style="margin-top:14px"><a class="dl" href="files/certification-data-analyst.pdf" download>${T(o("Download the certificate (PDF)","Télécharger la certification (PDF)"))}</a></p><p class="sm" style="margin-top:8px">${T(o("Certificate ID: OC-2026-09-1njx3lrh2p49","Identifiant : OC-2026-09-1njx3lrh2p49"))}</p></div></section>
  <section><h2>${T(o("Languages","Langues"))}</h2>
  <div class="cards">${LANGS.map(l=>`<div><h3>${T(l[0])}</h3><p>${T(l[1])}</p></div>`).join("")}</div></section>
  <div class="btns"><a class="dl" href="#/projets">${T(o("See my projects","Voir mes projets"))}</a><a class="dl ghost" href="#/cv">${T(UI.cvL)}</a></div>
@@ -322,6 +324,7 @@ function cv(){
  <p class="lead">${T(o("Two versions in each language: a designed version for humans, and an ATS-friendly version for recruitment software.","Deux versions par langue : une version mise en page pour les humains, et une version ATS pour les logiciels de recrutement."))}</p>
  <section style="margin-top:24px"><h2>${T(o("Download","Télécharger"))}</h2>
  <div class="cards">
+  <div><h3>${T(o("Certification — Data Analyst (RNCP 6)","Certification — Data Analyst (RNCP 6)"))}</h3><p>${T(o("OpenClassrooms professional title, issued 30 September 2026.","Titre professionnel OpenClassrooms, délivré le 30 septembre 2026."))}</p><p style="margin-top:10px"><a class="dl" href="files/certification-data-analyst.pdf" download>${T(o("Certificate (PDF)","Certificat (PDF)"))}</a></p></div>
   <div><h3>${T(o("CV — French","CV — français"))}</h3><p>${T(UI.cvD)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_FR.pdf" download>PDF</a></div>
   <div><h3>${T(o("CV — English","CV — anglais"))}</h3><p>${T(UI.cvE)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_EN.pdf" download>PDF</a></div>
   <div><h3>${T(o("CV — French, ATS","CV — français, ATS"))}</h3><p>${T(UI.cvAF)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_ATS_FR.pdf" download>PDF</a></div>
@@ -336,7 +339,7 @@ function cv(){
 function contact(){
  A.innerHTML=`<p class="kicker">${T(o("Get in touch","Restons en contact"))}</p>
  <h1>${T(o("Contact","Contact"))}</h1>
- <p class="lead">${T(o("I am looking for a BI / Data Analyst role in Paris or remote. The fastest way to reach me is email.","Je recherche un poste de BI / Data Analyst à Paris ou à distance. Le plus rapide pour me joindre est l’email."))}</p>
+ <p class="lead">${T(o("I am looking for a BI / Data Analyst role — in Paris, remote, or anywhere in the EU. The fastest way to reach me is email.","Je recherche un poste de BI / Data Analyst — à Paris, en télétravail, ou partout en Europe. Le plus rapide pour me joindre : l’email."))}</p>
  <div class="cards" style="margin-top:40px">
   <div><h3>Email</h3><p><a href="mailto:${CONTACT.email}">${CONTACT.email}</a></p></div>
   <div><h3>${T(o("Phone","Téléphone"))}</h3><p>${CONTACT.phone}</p></div>
