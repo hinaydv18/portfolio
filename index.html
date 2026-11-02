@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hina Yadav – Data & BI portfolio</title>
-<meta name="description" content="Five data projects with the data, method and results: SQL, Python, Power BI, Power Query.">
+<title>Hina Yadav – Data & BI Analyst</title>
+<meta name="description" content="Hina Yadav, Data & BI Analyst: SQL, Python, Power BI, Excel. Portfolio with six end-to-end data projects, career journey, skills and CV.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📊</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
@@ -16,15 +17,23 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--
 h1,h2,h3,.ui{font-family:var(--fh)}a{color:inherit}
 :focus-visible{outline:3px solid var(--sql);outline-offset:2px}
 .w{max-width:1040px;margin:0 auto;padding:0 20px}
-header{border-bottom:1px solid var(--ln)}
-header .w{display:flex;align-items:center;gap:18px;height:60px}
-.brand{font:800 1.15rem var(--fh);text-decoration:none;margin-right:auto}
-header a.n{font:600 .95rem var(--fh);text-decoration:none;color:var(--mu)}header a.n:hover{color:var(--ink)}
-.lg{display:flex;border:1px solid var(--ln);border-radius:6px;overflow:hidden}
+header{border-bottom:1px solid var(--ln);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);z-index:5}
+header .w{display:flex;align-items:center;gap:14px;height:60px}
+.brand{font:800 1.1rem var(--fh);text-decoration:none;margin-right:auto;white-space:nowrap}
+nav.top{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.top::-webkit-scrollbar{display:none}
+header a.n{font:600 .88rem var(--fh);text-decoration:none;color:var(--mu);padding:6px 9px;border-radius:6px;white-space:nowrap}
+header a.n:hover{color:var(--ink)}
+header a.n.on{color:var(--ink);background:color-mix(in srgb,var(--sql) 14%,transparent)}
+.lg{display:flex;border:1px solid var(--ln);border-radius:6px;overflow:hidden;flex:none}
 .lg button{font:600 .85rem var(--fh);background:none;color:var(--mu);border:0;padding:5px 11px;cursor:pointer}
 .lg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
-h1{font:800 clamp(2.6rem,8vw,5.2rem)/.98 var(--fh);letter-spacing:-.035em;margin:56px 0 18px}
-.lead{font-size:1.2rem;max-width:34em;color:var(--mu);margin:0 0 34px}
+h1{font:800 clamp(2.4rem,6.5vw,4.6rem)/1.02 var(--fh);letter-spacing:-.035em;margin:64px 0 18px}
+.kicker{font:600 .8rem var(--fh);letter-spacing:.14em;text-transform:uppercase;color:var(--sql);margin:0 0 14px}
+.lead{font-size:1.2rem;max-width:36em;color:var(--mu);margin:0 0 30px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:0 0 12px}
+.kpis div{background:var(--sf);border:1px solid var(--ln);border-top:4px solid var(--sql);border-radius:8px;padding:14px 16px}
+.kpis b{display:block;font:800 1.9rem/1.1 var(--fh);letter-spacing:-.02em}.kpis span{font:400 .9rem/1.4 var(--fh);color:var(--mu)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
 .chip{font:600 .9rem var(--fh);border:1.5px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer}
 .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -38,15 +47,18 @@ h1{font:800 clamp(2.6rem,8vw,5.2rem)/.98 var(--fh);letter-spacing:-.035em;margin
 .tg{display:flex;flex-wrap:wrap;gap:6px}.tag{font:600 .8rem var(--fh);padding:2px 9px;border-radius:5px;background:color-mix(in srgb,var(--k) 14%,transparent);color:var(--k)}
 .sm{font:400 .9rem/1.45 var(--fh);color:var(--mu)}
 section{margin-top:72px}h2{font:800 1.8rem var(--fh);letter-spacing:-.02em;margin:0 0 6px}
+h3{font:800 1.15rem var(--fh);margin:0 0 4px}
 .sub{color:var(--mu);margin:0 0 22px;max-width:40em}
 .mx{overflow-x:auto;background:var(--sf);border:1px solid var(--ln);border-radius:10px}
 .mx table{border-collapse:collapse;width:100%;min-width:640px;font-family:var(--fh)}
 .mx th,.mx td{padding:10px 14px;text-align:center;border-bottom:1px solid var(--ln);font-size:.9rem}
 .mx th{font-weight:600;color:var(--mu)}.mx td:first-child,.mx th:first-child{text-align:left;font-weight:600;color:var(--ink)}
 .mx tr:last-child td{border:0}.dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--k)}
-.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
-.ct a{color:var(--sql);font-weight:600}
-footer{margin:90px 0 40px;color:var(--mu);font:400 .9rem var(--fh)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.dl{display:inline-block;font:600 .95rem var(--fh);background:var(--ink);color:var(--bg);border-radius:8px;padding:11px 20px;text-decoration:none}
+.dl.ghost{background:none;color:var(--ink);border:1.5px solid var(--ln)}
+.dl:hover{opacity:.88}
+footer{margin:90px 0 40px;color:var(--mu);font:400 .9rem var(--fh);border-top:1px solid var(--ln);padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 .back{display:inline-block;margin:28px 0 0;font:600 .95rem var(--fh);color:var(--mu);text-decoration:none}
 .ph{border-left:8px solid var(--k);padding-left:20px;margin:26px 0 8px}.ph h1{font-size:clamp(2.1rem,6vw,3.6rem);margin:0 0 10px}
 .meta{display:flex;flex-wrap:wrap;gap:8px 26px;font:400 .95rem var(--fh);color:var(--mu);margin:14px 0 0}.meta b{color:var(--ink);font-weight:600}
@@ -64,37 +76,103 @@ ol.st li:last-child{border-color:transparent}
 .gal figcaption{font:400 .88rem/1.4 var(--fh);color:var(--mu);margin-top:6px}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
 .pg div{background:var(--sf);border:1px solid var(--ln);border-radius:8px;padding:16px 18px}.pg h3{font:800 1.1rem var(--fh);margin:0 0 4px}.pg p{margin:0 0 8px;font-size:.95rem}.pg span{font:400 .85rem/1.4 var(--fh);color:var(--mu)}
-.dl{display:inline-block;font:600 .95rem var(--fh);background:var(--ink);color:var(--bg);border-radius:8px;padding:10px 18px;text-decoration:none}
 .pn{display:flex;justify-content:space-between;gap:16px;margin-top:70px;border-top:1px solid var(--ln);padding-top:20px;font:600 1rem var(--fh)}.pn a{text-decoration:none}
 #lb{position:fixed;inset:0;background:rgba(10,14,20,.92);display:none;align-items:center;justify-content:center;z-index:9;padding:20px;cursor:zoom-out}
 #lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:6px;background:#fff}
-@media(max-width:760px){.th{display:none}.tr{grid-template-columns:1fr;gap:8px}.cols{grid-template-columns:1fr}header a.n{display:none}}
+/* timeline (parcours) */
+.tl{list-style:none;margin:0;padding:0;max-width:46em}
+.tl li{position:relative;padding:0 0 26px 46px;border-left:2px solid var(--ln);margin-left:13px}
+.tl li:last-child{padding-bottom:0;border-color:transparent}
+.tl li:before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--sql);border:3px solid var(--bg)}
+.tl .per{font:600 .82rem var(--fh);color:var(--sql);letter-spacing:.04em;text-transform:uppercase}
+.tl h3{margin:2px 0 1px}
+.tl .org{font:400 .92rem var(--fh);color:var(--mu);margin:0 0 6px}
+.tl p{margin:0;font-size:.95rem;color:var(--mu);max-width:38em}
+.tl.edu li:before{background:var(--py)}
+/* generic cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.cards>div{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:18px 20px}
+.cards>div h3{margin-bottom:6px}
+.cards>div p{margin:0;font-size:.95rem;color:var(--mu)}
+.cert{background:var(--sf);border:1px solid var(--ln);border-left:6px solid var(--py);border-radius:10px;padding:22px 24px;margin-top:14px;max-width:46em}
+.cert h3{font-size:1.3rem}
+.cert .per{font:600 .82rem var(--fh);color:var(--py);letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:4px}
+.cert p{margin:0 0 10px;color:var(--mu)}
+.cert ul{margin:0;padding-left:20px;color:var(--mu)}.cert li{margin:4px 0;font-size:.97rem}
+.cvprev{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px}
+.cvprev figure{margin:0}.cvprev img{width:100%;border:1px solid var(--ln);border-radius:8px;display:block}
+.cvprev figcaption{font:400 .88rem/1.4 var(--fh);color:var(--mu);margin-top:6px}
+@media(max-width:860px){.th{display:none}.tr{grid-template-columns:1fr;gap:8px}}
+@media(max-width:760px){header .w{gap:8px}.brand{font-size:1rem}header a.n{padding:6px 7px;font-size:.82rem}.lg button{padding:5px 8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header><div class="w"><a class="brand" href="#/">Hina Yadav</a><a class="n" href="#/" data-go="projects" id="n1"></a><a class="n" href="#/" data-go="skills" id="n2"></a><a class="n" href="#/" data-go="about" id="n3"></a>
+<header><div class="w"><a class="brand" href="#/">Hina Yadav</a>
+<nav class="top" aria-label="Main"><a class="n" href="#/" id="n0"></a><a class="n" href="#/parcours" id="n1"></a><a class="n" href="#/projets" id="n2"></a><a class="n" href="#/competences" id="n3"></a><a class="n" href="#/hobbies" id="n4"></a><a class="n" href="#/cv" id="n5"></a><a class="n" href="#/contact" id="n6"></a></nav>
 <div class="lg" role="group" aria-label="Language"><button data-l="en">EN</button><button data-l="fr">FR</button></div></div></header>
 <main class="w" id="app"></main>
 <div id="lb" role="dialog" aria-label="Image"><img alt=""></div>
 <script>
-/* ===== EDIT HERE: contact links (leave "" to hide) ===== */
-const CONTACT={email:"hinaydv18@gmail.com",linkedin:"",github:""};
-/* ======================================================= */
+/* ===== EDIT HERE: contact links ===== */
+const CONTACT={email:"hinaydv18@gmail.com",phone:"+33 6 67 84 45 60",linkedin:"https://www.linkedin.com/in/hina-yadav",github:"https://github.com/hinaydv18"};
+/* ================================ */
 const o=(en,fr)=>({en,fr});
-const UI={projects:o("Projects","Projets"),skills:o("Skills","Compétences"),about:o("About","À propos"),
- h1:o("Hina Yadav","Hina Yadav"),
- lead:o("Business intelligence analyst in training. Six projects, each with the data I worked on, the method I followed and what came out of it.","Analyste Business Intelligence en formation. Six projets, chacun avec les données utilisées, la méthode suivie et les résultats obtenus."),
- all:o("All","Tous"),c1:o("Project","Projet"),c2:o("Tools","Outils"),c3:o("Data","Données"),c4:o("Date","Date"),
- skT:o("Skills used in each project","Compétences par projet"),skS:o("Each dot is a skill I used in that project.","Chaque point indique une compétence utilisée dans le projet."),
- abT:o("About","À propos"),
- ab:o("I moved from sales coordination (EMEA) into data analytics. I am finishing the OpenClassrooms Business Intelligence Analyst programme, where I learned SQL, Python, Power BI and Power Query by working on realistic business cases.","Je suis passée de la coordination commerciale (EMEA) à l’analyse de données. Je termine la formation Analyste Business Intelligence d’OpenClassrooms, où j’ai appris SQL, Python, Power BI et Power Query sur des cas d’entreprise réalistes."),
- lang:o("Languages: English, French, Hindi.","Langues : anglais, français, hindi."),
+const NAV=[o("Home","Accueil"),o("Journey","Mon parcours"),o("Projects","Projets"),o("Skills","Compétences"),o("Hobbies","Hobbies"),o("CV","CV"),o("Contact","Contact")];
+const UI={
+ lead:o("Eight years coordinating EMEA sales and analysing commercial performance taught me to understand a business need. The OpenClassrooms Business Intelligence programme taught me the tools. Now I turn business questions into clear, usable analysis.","Huit ans de coordination commerciale EMEA et d’analyse de performance m’ont appris à comprendre un besoin métier. La formation Business Intelligence d’OpenClassrooms m’a appris les outils. Aujourd’hui, je transforme les questions métier en analyses claires et utilisables."),
+ h1:o("From sales coordination to dashboards: numbers a decision-maker can use.","De la coordination commerciale aux tableaux de bord : des chiffres que le décideur peut utiliser."),
+ k1:[["8+","<span class='x'></span>"],0],
+ c1:o("Project","Projet"),c2:o("Tools","Outils"),c3:o("Data","Données"),c4:o("Date","Date"),all:o("All","Tous"),
+ skT:o("Skills used in each project","Compétences par projet"),skS:o("Each dot is a skill used in that project.","Chaque point indique une compétence utilisée dans le projet."),
  back:o("← All projects","← Tous les projets"),q:o("The question","La question"),m:o("Method","Méthode"),r:o("Results","Résultats"),
  g:o("Slides and outputs (click to enlarge)","Diapositives et résultats (cliquer pour agrandir)"),
  pgT:o("Dashboard pages","Pages du tableau de bord"),dl:o("Download the source file","Télécharger le fichier source"),
  next:o("Next project →","Projet suivant →"),prev:o("← Previous project","← Projet précédent"),
- note:o("Training project on a fictional company.","Projet de formation sur une entreprise fictive.")};
+ note:o("Training project on a fictional company.","Projet de formation sur une entreprise fictive."),
+ cvL:o("View and download my CV","Voir et télécharger mon CV"),cvD:o("PDF · French version with design","PDF · version française avec mise en page"),
+ cvE:o("PDF · English version with design","PDF · version anglaise avec mise en page"),
+ cvAF:o("PDF · French ATS version","PDF · version française ATS"),cvAE:o("PDF · English ATS version","PDF · version anglaise ATS")};
+/* KPIs on home */
+const KPI=[
+ [o("8+ yrs","8+ ans"),o("EMEA sales coordination & analysis","Coordination et analyse commerciale EMEA")],
+ [o("6","6"),o("end-to-end data projects","projets de données de bout en bout")],
+ [o("RNCP 6","RNCP 6"),o("Business Intelligence Analyst, OpenClassrooms","Analyste Business Intelligence, OpenClassrooms")],
+ [o("3","3"),o("languages: English, French, Hindi","langues : anglais, français, hindi")]];
+/* Parcours — timeline */
+const XP=[
+ {per:"2025 – 2026",role:o("Business Intelligence Analyst programme (RNCP 6)","Formation Analyste Business Intelligence (RNCP 6)"),org:o("OpenClassrooms — remote","OpenClassrooms — à distance"),
+  txt:o("Business needs analysis, SQL extraction and analysis, data cleaning with Python (Pandas), interactive Power BI dashboards and KPI definition.","Analyse des besoins métier, extraction et analyse SQL, nettoyage des données avec Python (Pandas), tableaux de bord Power BI interactifs et définition des KPI."),edu:1},
+ {per:"2022 – 2024",role:o("EMEA Sales Coordinator","Coordinatrice commerciale EMEA"),org:o("Marshall — Paris / Stockholm","Marshall — Paris / Stockholm"),
+  txt:o("Analysed monthly sales, margin and performance data in Qlik Sense. Built and monitored KPI reports, optimised sales forecasts from trend and allocation data, and managed customer and distributor data in Navision with international teams.","Analyse des ventes, marges et performances mensuelles dans Qlik Sense. Création et suivi de rapports KPI, optimisation des prévisions de ventes à partir des tendances et allocations, gestion des données clients et distributeurs dans Navision avec des équipes internationales.")},
+ {per:"2015 – 2022",role:o("Client Consultant","Conseillère clientèle"),org:o("MERCI Concept Store — Paris","MERCI Concept Store — Paris"),
+  txt:o("Analysed customer needs and behaviour to improve the shopping experience. Implemented CRM actions based on customer data and contributed to retention.","Analyse des besoins et comportements clients pour améliorer l’expérience d’achat. Mise en place d’actions CRM à partir des données clients et contribution à la fidélisation.")},
+ {per:"2014",role:o("Communication & Marketing Assistant","Assistante communication et marketing"),org:o("Atelier Brunette — Paris","Atelier Brunette — Paris"),
+  txt:o("Monitored marketing performance and social-media engagement. Contributed to increasing brand visibility across European markets.","Suivi de la performance marketing et de l’engagement sur les réseaux sociaux. Contribution au développement de la notoriété de la marque sur les marchés européens.")},
+ {per:"2012 – 2014",role:o("International Luxury Management & Marketing","Management et marketing international du luxe"),org:o("ISC Paris — business school","ISC Paris — école de commerce"),
+  txt:o("Management, international marketing, brand development and understanding of luxury markets.","Management, marketing international, développement de marque et compréhension des marchés du luxe."),edu:1},
+ {per:"2010 – 2012",role:o("Client Relations Manager","Responsable relations clients"),org:o("Harvest Consultants — Bangalore, India","Harvest Consultants — Bangalore, Inde"),
+  txt:o("Managed client relations, marketing and digital communication.","Gestion des relations clients, du marketing et de la communication digitale.")},
+ {per:"2009 – 2010",role:o("French–English Translator","Traductrice français–anglais"),org:o("TCS — Bangalore, India","TCS — Bangalore, Inde"),
+  txt:o("Translated French–English content in an IT environment.","Traduction de contenus français–anglais en environnement informatique.")},
+ {per:"2006 – 2010",role:o("Bachelor's degree, French Language & Culture","Licence de langue et culture françaises"),org:o("University of Delhi — India","Université de Delhi — Inde"),
+  txt:o("Mastery of the French language, literature and intercultural exchange.","Maîtrise de la langue française, de la littérature et des échanges interculturels."),edu:1}];
+const CERT={t:o("Certification — Business Intelligence Analyst, RNCP level 6","Certification — Analyste Business Intelligence, RNCP niveau 6"),
+ per:o("OpenClassrooms · 2025 – 2026","OpenClassrooms · 2025 – 2026"),
+ d:o("State-recognised professional title (RNCP 6, equivalent to Bac+3/4), earned through six graded, end-to-end data projects.","Titre professionnel reconnu par l’État (RNCP 6, équivalent Bac+3/4), validé par six projets de données notés, de bout en bout."),
+ pts:[o("Analysing business needs to support decision-making","Analyser les besoins métier pour aider à la décision"),
+      o("SQL queries for data extraction and analysis","Écrire des requêtes SQL pour extraire et analyser les données"),
+      o("Cleaning and transforming data with Python (Pandas)","Nettoyer et transformer les données avec Python (Pandas)"),
+      o("Creating interactive Power BI dashboards and defining KPIs","Créer des tableaux de bord Power BI interactifs et définir les KPI")]};
+const LANGS=[[o("French — Fluent (C1)","Français — Courant (C1)"),o("Bachelor's degree in French; 14 years living and working in Paris","Licence de français ; 14 ans de vie et de travail à Paris")],
+ [o("English — Fluent (C1)","Anglais — Courant (C1)"),o("EMEA work environment; translation experience","Environnement de travail EMEA ; expérience de traduction")],
+ [o("Hindi — Native (C2)","Hindi — Langue maternelle (C2)"),o("Native language","Langue maternelle")]];
+/* Hobbies */
+const HB=[
+ [o("HYROX & running","HYROX et course à pied"),o("Fitness racing combines running and functional workouts. Training for it is a lesson in consistency and measurable progress — the same mindset I bring to long projects.","Le HYROX associe course à pied et exercices fonctionnels. s’y préparer apprend la régularité et la progression mesurable — l’état d’esprit que j’applique aux projets longs.")],
+ [o("Meditation & neuroscience","Méditation et neurosciences"),o("A daily practice, and a curiosity about what the science says about attention, learning and decision-making.","Une pratique quotidienne, et une curiosité pour ce que la science dit de l’attention, de l’apprentissage et de la prise de décision.")],
+ [o("Travel & cultural discovery","Voyages et découverte culturelle"),o("India, France and across Europe — living between three languages and cultures shapes how I read people and data.","Inde, France et toute l’Europe — vivre entre trois langues et cultures façonne ma lecture des personnes comme des données.")],
+ [o("Reading","Lecture"),o("Mostly non-fiction: business, psychology and data books that challenge how I think.","Essentiellement des essais : business, psychologie et ouvrages sur la donnée qui bousculent ma façon de penser.")]];
 const SK=[["SQL",["ins","crm","csat"],"sql"],["Data modelling · schema",["ins","csat"],"sql"],["Python · Pandas",["bn"],"py"],["Statistics · outliers",["bn"],"py"],["Power Query",["crm"],"pq"],["GDPR · anonymisation",["crm"],"pq"],["Power BI · DAX measures",["bi"],"bi"],["Excel · pivot tables · charts",["nba","bn"],"xl"]];
 const P=[
 {id:"nba",k:"xl",d:"2025-10",tools:["Excel"],file:"nba-excel.pptx",
@@ -177,21 +255,102 @@ const col=k=>`style="--k:var(--${k})"`;
 const tc=t=>({SQL:"sql",SQLite:"sql",PostgreSQL:"sql",Python:"py",Pandas:"py",Plotly:"py","Power BI":"bi",DAX:"bi","Power Query":"pq",GDPR:"pq",Excel:"xl"}[t]||"sql");
 const tags=p=>`<div class="tg">${p.tools.map(t=>`<span class="tag" ${col(tc(t))}>${t}</span>`).join("")}</div>`;
 const FL=["SQL","Python","Power BI","Power Query","Excel"];
+const foot=()=>`<footer><span>© 2026 Hina Yadav · Data & BI Analyst · Paris</span><span><a href="mailto:${CONTACT.email}">${CONTACT.email}</a>${CONTACT.linkedin?` · <a href="${CONTACT.linkedin}">LinkedIn</a>`:""}${CONTACT.github?` · <a href="${CONTACT.github}">GitHub</a>`:""}</span></footer>`;
 function home(){
+ A.innerHTML=`<p class="kicker">${T(o("Data & BI Analyst · Portfolio","Data & BI Analyst · Portfolio"))}</p>
+ <h1>${T(UI.h1)}</h1><p class="lead">${T(UI.lead)}</p>
+ <div class="kpis">${KPI.map(k=>`<div><b>${T(k[0])}</b><span>${T(k[1])}</span></div>`).join("")}</div>
+ <section style="margin-top:64px"><h2>${T(o("Six projects, from question to recommendation","Six projets, de la question à la recommandation"))}</h2>
+ <p class="sub">${T(o("Each with the data used, the method followed and the results obtained. Click any project for the full story.","Chacun avec les données utilisées, la méthode suivie et les résultats obtenus. Cliquez sur un projet pour le détail."))}</p>
+ ${projTable()}</section>
+ <div class="btns"><a class="dl" href="#/projets">${T(o("All projects →","Tous les projets →"))}</a><a class="dl ghost" href="#/parcours">${T(o("My journey","Mon parcours"))}</a><a class="dl ghost" href="#/contact">${T(o("Contact","Contact"))}</a></div>
+ ${foot()}`;
+}
+function projTable(){
  const list=P.filter(p=>flt=="all"||p.tools.includes(flt));
- A.innerHTML=`<h1>${T(UI.h1)}</h1><p class="lead">${T(UI.lead)}</p>
- <section id="projects" style="margin-top:0"><div class="chips" role="group">${["all",...FL].map(f=>`<button class="chip" data-f="${f}" aria-pressed="${flt==f}">${f=="all"?T(UI.all):f}</button>`).join("")}</div>
+ return `<div class="chips" role="group">${["all",...FL].map(f=>`<button class="chip" data-f="${f}" aria-pressed="${flt==f}">${f=="all"?T(UI.all):f}</button>`).join("")}</div>
  <div class="tbl"><div class="th" aria-hidden="true"><span>${T(UI.c1)}</span><span>${T(UI.c2)}</span><span>${T(UI.c3)}</span><span>${T(UI.c4)}</span></div>
- ${list.map(p=>`<a class="tr" href="#/p/${p.id}" ${col(p.k)}><div><h3>${T(p.t)}</h3><p>${T(p.s)}</p></div>${tags(p)}<span class="sm">${T(p.data)}</span><span class="sm">${mon(p.d)}</span></a>`).join("")}</div></section>
+ ${list.map(p=>`<a class="tr" href="#/p/${p.id}" ${col(p.k)}><div><h3>${T(p.t)}</h3><p>${T(p.s)}</p></div>${tags(p)}<span class="sm">${T(p.data)}</span><span class="sm">${mon(p.d)}</span></a>`).join("")}</div>`;
+}
+function projets(){
+ A.innerHTML=`<p class="kicker">${T(o("Portfolio","Portfolio"))}</p>
+ <h1>${T(o("Projects","Projets"))}</h1>
+ <p class="lead">${T(o("Six end-to-end projects from the OpenClassrooms Business Intelligence programme: SQL, Python, Power Query, GDPR and Power BI. Each page shows the question, the method, the results and the source file to download.","Six projets de bout en bout de la formation Analyste Business Intelligence d’OpenClassrooms : SQL, Python, Power Query, RGPD et Power BI. Chaque page présente la question, la méthode, les résultats et le fichier source à télécharger."))}</p>
+ <section style="margin-top:20px">${projTable()}</section>
  <section id="skills"><h2>${T(UI.skT)}</h2><p class="sub">${T(UI.skS)}</p><div class="mx"><table><thead><tr><th></th>${P.map(p=>`<th>${T(p.t).split(/[:,]| at /)[0]}</th>`).join("")}</tr></thead><tbody>
  ${SK.map(r=>`<tr><td>${r[0]}</td>${P.map(p=>`<td>${r[1].includes(p.id)?`<span class="dot" ${col(r[2])} role="img" aria-label="yes"></span>`:""}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>
- <section id="about" class="cols"><div><h2>${T(UI.abT)}</h2><p>${T(UI.ab)}</p><p>${T(UI.lang)}</p></div>
- <div class="ct"><h2>Contact</h2><p><a href="mailto:${CONTACT.email}">${CONTACT.email}</a>${CONTACT.linkedin?`<br><a href="${CONTACT.linkedin}">LinkedIn</a>`:""}${CONTACT.github?`<br><a href="${CONTACT.github}">GitHub</a>`:""}</p></div></section>`;
+ ${foot()}`;
+}
+function parcours(){
+ A.innerHTML=`<p class="kicker">${T(o("Who I am","Qui je suis"))}</p>
+ <h1>${T(o("My journey","Mon parcours"))}</h1>
+ <p class="lead">${T(o("From Delhi to Paris, from the shop floor to EMEA sales coordination, and now into data. The common thread: understand the need, then answer it with clarity.","De Delhi à Paris, du magasin à la coordination commerciale EMEA, puis vers la donnée. Le fil conducteur : comprendre le besoin, puis y répondre avec clarté."))}</p>
+ <section style="margin-top:24px"><h2>${T(o("Experience & education","Expérience & formation"))}</h2>
+ <ol class="tl">${XP.map(x=>`<li class="${x.edu?"edu":""}"><span class="per">${x.per}</span><h3>${T(x.role)}</h3><p class="org">${T(x.org)}</p><p>${T(x.txt)}</p></li>`).join("")}</ol></section>
+ <section><h2>${T(o("Certification","Certification"))}</h2>
+ <div class="cert"><span class="per">${T(CERT.per)}</span><h3>${T(CERT.t)}</h3><p>${T(CERT.d)}</p><ul>${CERT.pts.map(p=>`<li>${T(p)}</li>`).join("")}</ul></div></section>
+ <section><h2>${T(o("Languages","Langues"))}</h2>
+ <div class="cards">${LANGS.map(l=>`<div><h3>${T(l[0])}</h3><p>${T(l[1])}</p></div>`).join("")}</div></section>
+ <div class="btns"><a class="dl" href="#/projets">${T(o("See my projects","Voir mes projets"))}</a><a class="dl ghost" href="#/cv">${T(UI.cvL)}</a></div>
+ ${foot()}`;
+}
+function competences(){
+ A.innerHTML=`<p class="kicker">${T(o("What I work with","Mes outils"))}</p>
+ <h1>${T(o("Skills","Compétences"))}</h1>
+ <p class="lead">${T(o("Technical skills built and graded across six projects, plus eight years of business experience behind them.","Des compétences techniques construites et notées sur six projets, appuyées sur huit ans d’expérience métier."))}</p>
+ <section style="margin-top:24px"><h2>${T(o("By area","Par domaine"))}</h2>
+ <div class="cards">
+  <div><h3>${T(o("Query & analyse","Interroger & analyser"))}</h3><p>SQL (SQLite, PostgreSQL) · ${T(o("relational modelling, schemas and data dictionaries","modélisation relationnelle, schémas et dictionnaires de données"))} · ${T(o("business queries with JOIN, GROUP BY, HAVING","requêtes métier avec JOIN, GROUP BY, HAVING"))}</p></div>
+  <div><h3>${T(o("Prepare & clean","Préparer & nettoyer"))}</h3><p>Python · Pandas · Power Query · Excel · ${T(o("outlier detection, duplicates, consistency checks, GDPR anonymisation","détection d’anomalies, doublons, contrôles de cohérence, anonymisation RGPD"))}</p></div>
+  <div><h3>${T(o("Visualise & report","Visualiser & reporter"))}</h3><p>Power BI · DAX · Plotly · Qlik Sense · ${T(o("dashboard design, KPI definition, charts that support decisions","conception de tableaux de bord, définition de KPI, graphiques utiles à la décision"))}</p></div>
+  <div><h3>${T(o("Business foundation","Fondamentaux métier"))}</h3><p>${T(o("sales & margin performance analysis, forecasting, CRM/ERP (Navision), EMEA coordination","analyse de performance ventes et marges, prévisions, CRM/ERP (Navision), coordination EMEA"))}</p></div>
+ </div></section>
+ <section><h2>${T(UI.skT)}</h2><p class="sub">${T(UI.skS)}</p><div class="mx"><table><thead><tr><th></th>${P.map(p=>`<th>${T(p.t).split(/[:,]| at /)[0]}</th>`).join("")}</tr></thead><tbody>
+ ${SK.map(r=>`<tr><td>${r[0]}</td>${P.map(p=>`<td>${r[1].includes(p.id)?`<span class="dot" ${col(r[2])} role="img" aria-label="yes"></span>`:""}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>
+ ${foot()}`;
+}
+function hobbies(){
+ A.innerHTML=`<p class="kicker">${T(o("Beyond data","Au-delà de la donnée"))}</p>
+ <h1>${T(o("Hobbies","Hobbies"))}</h1>
+ <p class="lead">${T(o("What I do when I am not cleaning datasets.","Ce que je fais quand je ne nettoie pas des jeux de données."))}</p>
+ <div class="cards" style="margin-top:40px">${HB.map(h=>`<div><h3>${T(h[0])}</h3><p>${T(h[1])}</p></div>`).join("")}</div>
+ ${foot()}`;
+}
+function cv(){
+ A.innerHTML=`<p class="kicker">${T(o("Recruiter-friendly","Version recruteur"))}</p>
+ <h1>${T(o("My CV","Mon CV"))}</h1>
+ <p class="lead">${T(o("Two versions in each language: a designed version for humans, and an ATS-friendly version for recruitment software.","Deux versions par langue : une version mise en page pour les humains, et une version ATS pour les logiciels de recrutement."))}</p>
+ <section style="margin-top:24px"><h2>${T(o("Download","Télécharger"))}</h2>
+ <div class="cards">
+  <div><h3>${T(o("CV — French","CV — français"))}</h3><p>${T(UI.cvD)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_FR.pdf" download>PDF</a></div>
+  <div><h3>${T(o("CV — English","CV — anglais"))}</h3><p>${T(UI.cvE)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_EN.pdf" download>PDF</a></div>
+  <div><h3>${T(o("CV — French, ATS","CV — français, ATS"))}</h3><p>${T(UI.cvAF)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_ATS_FR.pdf" download>PDF</a></div>
+  <div><h3>${T(o("CV — English, ATS","CV — anglais, ATS"))}</h3><p>${T(UI.cvAE)}</p><p style="margin-top:10px"><a class="dl" href="Hina_YADAV_CV_ATS_EN.pdf" download>PDF</a></div>
+ </div>
+ <div class="cvprev">
+  <figure><img src="cv-fr.jpg" alt="CV français" loading="lazy"><figcaption>${T(o("French version (preview)","Version française (aperçu)"))}</figcaption></figure>
+  <figure><img src="cv-en.jpg" alt="CV English" loading="lazy"><figcaption>${T(o("English version (preview)","Version anglaise (aperçu)"))}</figcaption></figure>
+ </div></section>
+ ${foot()}`;
+}
+function contact(){
+ A.innerHTML=`<p class="kicker">${T(o("Get in touch","Restons en contact"))}</p>
+ <h1>${T(o("Contact","Contact"))}</h1>
+ <p class="lead">${T(o("I am looking for a BI / Data Analyst role in Paris or remote. The fastest way to reach me is email.","Je recherche un poste de BI / Data Analyst à Paris ou à distance. Le plus rapide pour me joindre est l’email."))}</p>
+ <div class="cards" style="margin-top:40px">
+  <div><h3>Email</h3><p><a href="mailto:${CONTACT.email}">${CONTACT.email}</a></p></div>
+  <div><h3>${T(o("Phone","Téléphone"))}</h3><p>${CONTACT.phone}</p></div>
+  <div><h3>LinkedIn</h3><p><a href="${CONTACT.linkedin}">linkedin.com/in/hina-yadav</a></p></div>
+  <div><h3>GitHub</h3><p><a href="${CONTACT.github}">github.com/hinaydv18</a></p></div>
+  <div><h3>${T(o("Location","Localisation"))}</h3><p>${T(o("Maisons-Alfort, Île-de-France (Paris area)","Maisons-Alfort, Île-de-France (agglomération parisienne)"))}</p></div>
+ </div>
+ <div class="btns"><a class="dl ghost" href="#/cv">${T(UI.cvL)}</a><a class="dl" href="#/projets">${T(o("See my projects","Voir mes projets"))}</a></div>
+ ${foot()}`;
 }
 function proj(id){
  const i=P.findIndex(p=>p.id==id),p=P[i];if(!p)return home();
  const nx=P[(i+1)%P.length],pv=P[(i+P.length-1)%P.length],b=`assets/${id}/`;
- A.innerHTML=`<a class="back" href="#/">${T(UI.back)}</a>
+ A.innerHTML=`<a class="back" href="#/projets">${T(UI.back)}</a>
  <div class="ph" ${col(p.k)}><h1>${T(p.t)}</h1>${tags(p)}<div class="meta"><span><b>${T(UI.c3)}:</b> ${T(p.data)}</span><span><b>${T(UI.c4)}:</b> ${mon(p.d)}</span><span>${T(UI.note)}</span></div></div>
  <section class="pr" ${col(p.k)}><h2>${T(UI.q)}</h2><p>${T(p.q)}</p></section>
  <section class="pr" ${col(p.k)}><h2>${T(UI.m)}</h2><ol class="st">${p.m.map(x=>`<li>${T(x)}</li>`).join("")}</ol></section>
@@ -199,20 +358,26 @@ function proj(id){
  ${p.pg?`<section class="pr" ${col(p.k)}><h2>${T(UI.pgT)}</h2><div class="pg">${p.pg.map(g=>`<div><h3>${T(g[0])}</h3><p>${T(g[1])}</p><span>${g[2]}</span></div>`).join("")}</div></section>`:""}
  ${p.im.length?`<section class="pr"><h2>${T(UI.g)}</h2><div class="gal">${p.im.map((c,j)=>{const f=b+(j+1)+(id=="bn"?".png":".jpg");return `<figure><button data-z="${f}" aria-label="${T(c)}"><img src="${f}" alt="${T(c)}" loading="lazy"></button><figcaption>${T(c)}</figcaption></figure>`}).join("")}</div>${p.sn?`<p class="sm" style="margin-top:12px">${T(p.sn)}</p>`:""}</section>`:""}
  <section><a class="dl" href="files/${p.file}" download>${T(UI.dl)} (${p.file.split(".").pop()})</a></section>
- <nav class="pn"><a href="#/p/${pv.id}">${T(UI.prev)}</a><a href="#/p/${nx.id}">${T(UI.next)}</a></nav>`;
+ <nav class="pn"><a href="#/p/${pv.id}">${T(UI.prev)}</a><a href="#/p/${nx.id}">${T(UI.next)}</a></nav>
+ ${foot()}`;
 }
-function go(){const m=location.hash.match(/^#\/p\/(\w+)/);document.documentElement.lang=lang;
- ["n1","n2","n3"].forEach((x,j)=>$("#"+x).textContent=T([UI.projects,UI.skills,UI.about][j]));
+const ROUTES={"":"home","parcours":"parcours","projets":"projets","competences":"competences","hobbies":"hobbies","cv":"cv","contact":"contact"};
+function go(){
+ const m=location.hash.match(/^#\/p\/(\w+)/);
+ const r=m?null:(ROUTES[location.hash.replace(/^#\/?/,"")]||"home");
+ document.documentElement.lang=lang;
+ ["n0","n1","n2","n3","n4","n5","n6"].forEach((x,j)=>{const el=$("#"+x);el.textContent=T(NAV[j]);el.classList.toggle("on",!m&&(r==["home","parcours","projets","competences","hobbies","cv","contact"][j]))});
  document.querySelectorAll(".lg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l==lang));
- m?proj(m[1]):home();}
+ if(m)proj(m[1]);
+ else ({home,parcours,projets,competences,hobbies,cv,contact})[r]();
+}
 addEventListener("hashchange",()=>{go();if(location.hash.startsWith("#/p/"))scrollTo(0,0)});
-document.addEventListener("click",e=>{const t=e.target.closest("[data-l],[data-f],[data-z],[data-go]");
+document.addEventListener("click",e=>{const t=e.target.closest("[data-l],[data-f],[data-z]");
  if(!t&&e.target.closest("#lb")){$("#lb").classList.remove("on");return}
  if(!t)return;
  if(t.dataset.l){lang=t.dataset.l;try{localStorage.setItem("hl",lang)}catch(x){}go()}
- else if(t.dataset.f){flt=t.dataset.f;home()}
- else if(t.dataset.z){const l=$("#lb");l.querySelector("img").src=t.dataset.z;l.classList.add("on")}
- else if(t.dataset.go){e.preventDefault();const id=t.dataset.go;const sc=()=>{const el=document.getElementById(id);el&&el.scrollIntoView()};if(location.hash!="#/"&&location.hash!=""){location.hash="#/";setTimeout(sc,50)}else sc()}});
+ else if(t.dataset.f){flt=t.dataset.f;projets()}
+ else if(t.dataset.z){const l=$("#lb");l.querySelector("img").src=t.dataset.z;l.classList.add("on")}});
 addEventListener("keydown",e=>{if(e.key=="Escape")$("#lb").classList.remove("on")});
 go();
 </script>
