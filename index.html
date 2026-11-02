@@ -137,12 +137,12 @@ const UI={
 const KPI=[
  [o("8+ yrs","8+ ans"),o("EMEA sales coordination & analysis","Coordination et analyse commerciale EMEA")],
  [o("6","6"),o("end-to-end data projects","projets de données de bout en bout")],
- [o("RNCP 6","RNCP 6"),o("Business Intelligence Analyst, OpenClassrooms","Analyste Business Intelligence, OpenClassrooms")],
+ [o("RNCP 6","RNCP 6"),o("Data Analyst title, OpenClassrooms (2026)","Titre Data Analyst, OpenClassrooms (2026)")],
  [o("3","3"),o("languages: English, French, Hindi","langues : anglais, français, hindi")]];
 /* Parcours — timeline */
 const XP=[
  {per:"2025 – 2026",role:o("Business Intelligence Analyst programme (RNCP 6)","Formation Analyste Business Intelligence (RNCP 6)"),org:o("OpenClassrooms — remote","OpenClassrooms — à distance"),
-  txt:o("Business needs analysis, SQL extraction and analysis, data cleaning with Python (Pandas), interactive Power BI dashboards and KPI definition.","Analyse des besoins métier, extraction et analyse SQL, nettoyage des données avec Python (Pandas), tableaux de bord Power BI interactifs et définition des KPI."),edu:1},
+  txt:o("Business needs analysis, SQL extraction and analysis, data cleaning with Python (Pandas), interactive Power BI dashboards and KPI definition. Completed with the Data Analyst professional certification (RNCP 6), issued 30 September 2026.","Analyse des besoins métier, extraction et analyse SQL, nettoyage des données avec Python (Pandas), tableaux de bord Power BI interactifs et définition des KPI. Formation validée par la certification professionnelle Data Analyst (RNCP 6), délivrée le 30 septembre 2026."),edu:1},
  {per:"2022 – 2024",role:o("EMEA Sales Coordinator","Coordinatrice commerciale EMEA"),org:o("Marshall — Paris / Stockholm","Marshall — Paris / Stockholm"),
   txt:o("Analysed monthly sales, margin and performance data in Qlik Sense. Built and monitored KPI reports, optimised sales forecasts from trend and allocation data, and managed customer and distributor data in Navision with international teams.","Analyse des ventes, marges et performances mensuelles dans Qlik Sense. Création et suivi de rapports KPI, optimisation des prévisions de ventes à partir des tendances et allocations, gestion des données clients et distributeurs dans Navision avec des équipes internationales.")},
  {per:"2015 – 2022",role:o("Client Consultant","Conseillère clientèle"),org:o("MERCI Concept Store — Paris","MERCI Concept Store — Paris"),
@@ -157,9 +157,9 @@ const XP=[
   txt:o("Translated French–English content in an IT environment.","Traduction de contenus français–anglais en environnement informatique.")},
  {per:"2006 – 2010",role:o("Bachelor's degree, French Language & Culture","Licence de langue et culture françaises"),org:o("University of Delhi — India","Université de Delhi — Inde"),
   txt:o("Mastery of the French language, literature and intercultural exchange.","Maîtrise de la langue française, de la littérature et des échanges interculturels."),edu:1}];
-const CERT={t:o("Certification — Business Intelligence Analyst, RNCP level 6","Certification — Analyste Business Intelligence, RNCP niveau 6"),
- per:o("OpenClassrooms · 2025 – 2026","OpenClassrooms · 2025 – 2026"),
- d:o("State-recognised professional title (RNCP 6, equivalent to Bac+3/4), earned through six graded, end-to-end data projects.","Titre professionnel reconnu par l’État (RNCP 6, équivalent Bac+3/4), validé par six projets de données notés, de bout en bout."),
+const CERT={t:o("Certification — Data Analyst, RNCP level 6","Certification — Data Analyst, RNCP niveau 6"),
+ per:o("OpenClassrooms · issued 30 September 2026","OpenClassrooms · délivrée le 30 septembre 2026"),
+ d:o("State-recognised professional title registered in the RNCP at level 6 (NSF 326), equivalent to Bac+3/4. Awarded by OpenClassrooms following the certification jury's decision of 28 September 2026, and validated through six graded, end-to-end data projects.","Titre professionnel reconnu par l’État, enregistré au RNCP au niveau 6 (NSF 326), équivalent Bac+3/4. Délivré par OpenClassrooms après décision du jury de certification du 28 septembre 2026, et validé par six projets de données notés, de bout en bout."),
  pts:[o("Analysing business needs to support decision-making","Analyser les besoins métier pour aider à la décision"),
       o("SQL queries for data extraction and analysis","Écrire des requêtes SQL pour extraire et analyser les données"),
       o("Cleaning and transforming data with Python (Pandas)","Nettoyer et transformer les données avec Python (Pandas)"),
@@ -288,7 +288,7 @@ function parcours(){
  <section style="margin-top:24px"><h2>${T(o("Experience & education","Expérience & formation"))}</h2>
  <ol class="tl">${XP.map(x=>`<li class="${x.edu?"edu":""}"><span class="per">${x.per}</span><h3>${T(x.role)}</h3><p class="org">${T(x.org)}</p><p>${T(x.txt)}</p></li>`).join("")}</ol></section>
  <section><h2>${T(o("Certification","Certification"))}</h2>
- <div class="cert"><span class="per">${T(CERT.per)}</span><h3>${T(CERT.t)}</h3><p>${T(CERT.d)}</p><ul>${CERT.pts.map(p=>`<li>${T(p)}</li>`).join("")}</ul></div></section>
+ <div class="cert"><span class="per">${T(CERT.per)}</span><h3>${T(CERT.t)}</h3><p>${T(CERT.d)}</p><ul>${CERT.pts.map(p=>`<li>${T(p)}</li>`).join("")}</ul><p style="margin-top:16px"><a class="dl" href="files/certification-data-analyst.pdf" download>${T(o("View the certificate (PDF)","Voir la certification (PDF)"))}</a></p><p class="sm" style="margin-top:8px">${T(o("Certificate ID: OC-2026-09-1njx3lrh2p49","Identifiant : OC-2026-09-1njx3lrh2p49"))}</p></div></section>
  <section><h2>${T(o("Languages","Langues"))}</h2>
  <div class="cards">${LANGS.map(l=>`<div><h3>${T(l[0])}</h3><p>${T(l[1])}</p></div>`).join("")}</div></section>
  <div class="btns"><a class="dl" href="#/projets">${T(o("See my projects","Voir mes projets"))}</a><a class="dl ghost" href="#/cv">${T(UI.cvL)}</a></div>
